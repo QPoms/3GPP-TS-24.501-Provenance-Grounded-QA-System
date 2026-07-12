@@ -1,6 +1,6 @@
-# 3GPP TS 24.501 GraphRAG Agent
+# 3GPP TS 24.501 Provenance-Grounded QA System
 
-> Evidence-grounded telecom standards assistant for 3GPP TS 24.501 v19.2.0, combining specification retrieval, knowledge-graph tools, and a GPT-powered agent.
+> A provenance-grounded 3GPP knowledge QA system for TS 24.501 v19.2.0, combining structured specification parsing, a document-built knowledge graph, retrieval, and citation validation.
 
 [![Project Status](https://img.shields.io/badge/status-working%20prototype-brightgreen)](#project-status)
 [![Python](https://img.shields.io/badge/python-3.11%2B-blue)](https://www.python.org/)
@@ -11,13 +11,13 @@
 
 3GPP specifications are authoritative but hard to navigate: procedures span sections, terms are dense, and small exceptions can change the answer.
 
-This project builds a focused assistant for **3GPP TS 24.501**. It does not answer standards questions from model memory alone. Instead, it retrieves specification chunks, optionally inspects a telecom knowledge graph, and returns answers with traceable evidence and validated `chunk_id` citations.
+This project builds a focused knowledge QA system for **3GPP TS 24.501**. It does not answer standards questions from model memory alone. Instead, it retrieves specification chunks, optionally inspects a telecom knowledge graph, and returns answers with traceable evidence and validated `chunk_id` citations.
 
 The repository is intentionally scoped to one specification first. That keeps parsing, graph alignment, retrieval quality, and citation safety measurable.
 
 ## What Works Now
 
-The current prototype contains a working TS 24.501-focused GraphRAG pipeline with three connected layers:
+The current prototype contains a working TS 24.501-focused provenance-grounded QA pipeline with three connected layers:
 
 ### 1. TS 24.501 knowledge base construction
 
@@ -49,9 +49,9 @@ The graph construction process follows the document-first shape of TS 24.501:
 
 This produces a graph layer that is specific enough to answer questions about TS 24.501, but still connected enough to explain how concepts such as NAS security context, replay protection, integrity verification, message formats, and procedure states relate to one another.
 
-### 3. Evidence-grounded GPT agent
+### 3. Evidence-grounded QA runtime
 
-The runtime agent answers through bounded tools instead of free-form model memory:
+The QA runtime answers through bounded tools instead of free-form model memory:
 
 - `search_spec` retrieves relevant TS 24.501 chunks
 - `resolve_entities` maps user terms to graph entities
@@ -59,7 +59,7 @@ The runtime agent answers through bounded tools instead of free-form model memor
 - `expand_graph` explores bounded neighborhoods
 - `find_paths` searches limited relationship paths
 
-The agent runs through an OpenAI-compatible Responses API endpoint, supports custom base URLs, and includes a fallback for providers that support tool calls but do not reliably support stateful `previous_response_id` continuation.
+The runtime uses an OpenAI-compatible Responses API endpoint, supports custom base URLs, and includes a fallback for providers that support tool calls but do not reliably support stateful `previous_response_id` continuation.
 
 Citation safety is enforced programmatically: if the final answer cites a `chunk_id` that was not returned by a tool during the same run, the answer is rejected.
 
@@ -69,7 +69,7 @@ The result is a CLI-ready prototype that can search the specification, inspect t
 
 ```mermaid
 flowchart TD
-    Q["User question"] --> A["GPT tool-using agent"]
+    Q["User question"] --> A["Evidence-grounded QA runtime"]
     A --> S["search_spec"]
     A --> R["resolve_entities"]
     A --> I["inspect_entity"]
@@ -115,7 +115,7 @@ Build the document-first TS 24.501 graph layer:
 .\.venv\Scripts\kg-agent.exe build-graph
 ```
 
-Ask the evidence-grounded agent:
+Ask the provenance-grounded QA system:
 
 ```powershell
 .\.venv\Scripts\kg-agent.exe ask "How is replay protection handled for NAS signalling?"
@@ -186,6 +186,6 @@ This repository currently focuses on the second category: **3GPP technical-docum
 
 The runtime uses the OpenAI Python SDK and the Responses API tool-calling format.
 
-Some custom OpenAI-compatible endpoints support basic `/v1/responses` calls but do not support stateful `previous_response_id` continuation consistently. The agent includes a narrow fallback for this case: if the provider reports that a response item was created under a different Azure OpenAI resource, the runtime retries the tool-output step without `previous_response_id` and with minimal function-call items.
+Some custom OpenAI-compatible endpoints support basic `/v1/responses` calls but do not support stateful `previous_response_id` continuation consistently. The runtime includes a narrow fallback for this case: if the provider reports that a response item was created under a different Azure OpenAI resource, it retries the tool-output step without `previous_response_id` and with minimal function-call items.
 
 See [docs/api_configuration.md](docs/api_configuration.md).
