@@ -109,6 +109,12 @@ Run a deterministic retrieval command:
 .\.venv\Scripts\kg-agent.exe search-spec "replay protection for NAS signalling"
 ```
 
+Build the document-first TS 24.501 graph layer:
+
+```powershell
+.\.venv\Scripts\kg-agent.exe build-graph
+```
+
 Ask the evidence-grounded agent:
 
 ```powershell
@@ -123,6 +129,7 @@ Never commit `.env` or an API key. See [docs/api_configuration.md](docs/api_conf
 
 ```powershell
 .\.venv\Scripts\kg-agent.exe ask "How is replay protection handled for NAS signalling?" --json
+.\.venv\Scripts\kg-agent.exe build-graph
 .\.venv\Scripts\kg-agent.exe search-spec "5G NAS security context"
 .\.venv\Scripts\kg-agent.exe resolve "Replay protection"
 .\.venv\Scripts\kg-agent.exe inspect "Replay protection"
@@ -139,22 +146,23 @@ This is a working prototype, not a finished standards product.
 
 Current local data foundation:
 
-- 421-node TS 24.501 working subgraph
-- 184 working-subgraph edges
+- 2,056-node document-built TS 24.501 working graph
+- 2,891 provenance-carrying graph edges
+- 828 illegal candidate triples blocked by the schema whitelist during deterministic construction
 - 3,037 structure-aware specification chunks
 - 3,036 chunks with section-start page metadata
 - BM25 Recall@5 of 1.0 on an initial 8-question engineering set
 
 Reports:
 
-- [TS 24.501 graph audit](reports/ts24501_graph_audit.md)
 - [Retrieval baseline](reports/retrieval_baseline.md)
 
 Known limitations:
 
 - The evaluation set is still small and engineering-oriented.
 - The upstream published text chunks contain empty `text` fields, so this project reconstructs usable chunks from the official TS 24.501 document.
-- Graph evidence is strongest around definitions and early security/access-control sections; many procedural answers still rely primarily on text retrieval.
+- The current self-built graph is a deterministic skeleton: sections, section-defined entities, external references, and provenance-carrying graph edges are live; richer behavioral relations still require the next schema-constrained extraction pass.
+- Many procedural answers still rely primarily on text retrieval.
 - The Streamlit UI is not included yet. The CLI is the supported interface.
 
 ## Testing and Evaluation

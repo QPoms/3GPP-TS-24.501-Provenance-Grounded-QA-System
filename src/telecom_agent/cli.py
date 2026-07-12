@@ -11,7 +11,7 @@ from telecom_agent.alignment import align_graph_to_chunks
 from telecom_agent.agent import AgentTools, OpenAIResponsesAgent
 from telecom_agent.config import Settings, create_openai_client
 from telecom_agent.evaluation import evaluate_bm25
-from telecom_agent.graph import GraphRepository, audit_graphml, export_spec_subgraph
+from telecom_agent.graph import GraphRepository, audit_graphml, build_spec_graph, export_spec_subgraph
 from telecom_agent.ingestion import ingest_docx
 from telecom_agent.retrieval import (
     BM25Index,
@@ -48,6 +48,12 @@ def build_parser() -> argparse.ArgumentParser:
         type=Path,
         default=Path("data/processed/graph/ts24501_working_subgraph.graphml"),
     )
+
+    build_graph = subparsers.add_parser(
+        "build-graph", help="Build a document-first TS 24.501 GraphML knowledge graph"
+    )
+    build_graph.add_argument("--chunks", type=Path, default=DEFAULT_CHUNKS)
+    build_graph.add_argument("--output", type=Path, default=DEFAULT_WORKING_GRAPH)
 
     ingest = subparsers.add_parser("ingest-spec", help="Parse a TS 24.501 DOCX into JSONL")
     ingest.add_argument("--source", type=Path, required=True)
@@ -150,6 +156,10 @@ def main(argv: Sequence[str] | None = None) -> int:
         return 0
     if args.command == "export-subgraph":
         result = export_spec_subgraph(args.graph, args.output, spec_token=args.spec_token)
+        print(json.dumps(result.to_dict(), ensure_ascii=False, indent=2))
+        return 0
+    if args.command == "build-graph":
+        result = build_spec_graph(load_chunks(args.chunks), args.output)
         print(json.dumps(result.to_dict(), ensure_ascii=False, indent=2))
         return 0
     if args.command == "ingest-spec":
