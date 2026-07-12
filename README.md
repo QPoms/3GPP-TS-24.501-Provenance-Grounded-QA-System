@@ -5,7 +5,6 @@
 [![Project Status](https://img.shields.io/badge/status-working%20prototype-brightgreen)](#project-status)
 [![Python](https://img.shields.io/badge/python-3.11%2B-blue)](https://www.python.org/)
 [![OpenAI API](https://img.shields.io/badge/runtime-OpenAI%20compatible%20API-412991)](https://developers.openai.com/api/docs/)
-[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Spec](https://img.shields.io/badge/3GPP-TS%2024.501%20v19.2.0-0050a4)](https://www.3gpp.org/)
 
 ## Overview
@@ -36,17 +35,19 @@ This produces a text corpus that can answer version-specific questions about TS 
 
 ### 2. TS 24.501-specific knowledge graph
 
-The project uses the public Release 19 telecom knowledge graph as a seed corpus, then constructs a TS 24.501 working graph around the `24501-j20` provenance signal.
+The project builds a TS 24.501-specific knowledge graph around the structure of the standard itself. The goal is not to keep a large generic telecom graph and query it directly, but to extract the entities, relations, provenance, and textual anchors that are useful for reasoning over one concrete specification version.
 
-The graph-building process:
+The graph construction process follows the document-first shape of TS 24.501:
 
-- identifies graph nodes and relations whose provenance points to TS 24.501
-- keeps relevant endpoint nodes so retained relations remain interpretable
-- preserves contextual links to neighboring telecom concepts when they help explain a TS 24.501 entity
-- aligns graph entities and relations back to reconstructed specification chunks
-- records whether each graph-to-text match is verified, high-confidence, or candidate-level
+- start from the official `24501-j20` specification identity and treat it as the provenance anchor for TS 24.501 v19.2.0
+- extract candidate telecom entities from section titles, definitions, message names, procedures, security concepts, and specification metadata
+- normalize repeated labels, acronyms, and specification references into stable graph entities
+- retain relations only when they remain interpretable in the TS 24.501 context, such as definition links, reference links, message/procedure associations, and security-context relationships
+- keep endpoint nodes required to explain a retained relation instead of cutting edges into isolated fragments
+- align graph entities and relations back to reconstructed specification chunks so graph evidence can be checked against text evidence
+- label each graph-to-text match as verified, high-confidence, or candidate-level
 
-In other words, this is not a generic graph dump. It is a TS 24.501-centered graph layer designed to support standards question answering, entity inspection, neighborhood expansion, and bounded path search.
+This produces a graph layer that is specific enough to answer questions about TS 24.501, but still connected enough to explain how concepts such as NAS security context, replay protection, integrity verification, message formats, and procedure states relate to one another.
 
 ### 3. Evidence-grounded GPT agent
 
@@ -88,28 +89,13 @@ The model only receives bounded tool outputs. It does not get shell access, arbi
 
 ## Quick Start
 
-### 1. Create the environment
-
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -e .
-```
-
-Optional extras:
-
-```powershell
-.\.venv\Scripts\python.exe -m pip install -e ".[ingestion]"
-.\.venv\Scripts\python.exe -m pip install -e ".[retrieval]"
-.\.venv\Scripts\python.exe -m pip install -e ".[dev]"
-```
-
-### 2. Configure the API
-
-```powershell
 Copy-Item .env.example .env
 ```
 
-Then edit `.env` locally:
+Edit `.env` locally:
 
 ```dotenv
 OPENAI_API_KEY=your_api_key_here
@@ -117,55 +103,32 @@ OPENAI_MODEL=your_model_name
 OPENAI_BASE_URL=
 ```
 
-For a compatible custom endpoint, set `OPENAI_BASE_URL`, for example:
-
-```dotenv
-OPENAI_BASE_URL=https://your-provider.example/v1
-```
-
-Never commit `.env` or an API key.
-
-### 3. Run the CLI
+Run a deterministic retrieval command:
 
 ```powershell
 .\.venv\Scripts\kg-agent.exe search-spec "replay protection for NAS signalling"
 ```
 
-Ask the agent:
+Ask the evidence-grounded agent:
 
 ```powershell
 .\.venv\Scripts\kg-agent.exe ask "How is replay protection handled for NAS signalling?"
 ```
 
-Structured output:
+Use `--json` when you want the answer, response id, tool trace, and validated cited chunk ids as structured output.
+
+Never commit `.env` or an API key. See [docs/api_configuration.md](docs/api_configuration.md) for custom endpoint notes.
+
+## Useful Commands
 
 ```powershell
 .\.venv\Scripts\kg-agent.exe ask "How is replay protection handled for NAS signalling?" --json
-```
-
-Example JSON includes:
-
-- final answer
-- response id
-- bounded tool trace
-- validated cited chunk ids
-
-## CLI Commands
-
-```powershell
-.\.venv\Scripts\kg-agent.exe audit-graph
-.\.venv\Scripts\kg-agent.exe export-subgraph
-.\.venv\Scripts\kg-agent.exe ingest-spec --source data\external\specifications\24501-j20\24501-j20.docx
 .\.venv\Scripts\kg-agent.exe search-spec "5G NAS security context"
 .\.venv\Scripts\kg-agent.exe resolve "Replay protection"
 .\.venv\Scripts\kg-agent.exe inspect "Replay protection"
 .\.venv\Scripts\kg-agent.exe neighbors "Replay protection"
 .\.venv\Scripts\kg-agent.exe path "Replay protection" "message integrity"
-.\.venv\Scripts\kg-agent.exe align
 .\.venv\Scripts\kg-agent.exe eval-retrieval
-.\.venv\Scripts\kg-agent.exe build-vector
-.\.venv\Scripts\kg-agent.exe search-hybrid "How is NAS replay protection handled?"
-.\.venv\Scripts\kg-agent.exe ask "How is replay protection handled for NAS signalling?"
 ```
 
 See [examples/demo_queries.md](examples/demo_queries.md) for demo prompts.
@@ -196,37 +159,6 @@ Known limitations:
 
 ## Testing and Evaluation
 
-The current test suite has two layers.
-
-First, the repository has deterministic engineering tests:
-
-```powershell
-$env:PYTHONPATH='tests'
-.\.venv\Scripts\python.exe -m unittest discover -s tests -v
-```
-
-These tests cover:
-
-- DOCX ingestion and section/table preservation
-- telecom-aware BM25 tokenization and section filtering
-- graph audit, subgraph export, entity resolution, neighbors, and paths
-- graph-to-text lexical alignment
-- retrieval metric calculation
-- vector/RRF retrieval behavior with a fake embedder
-- GPT Responses API tool-loop behavior using fake clients
-- custom endpoint fallback for `previous_response_id` compatibility issues
-- rejection of invented `chunk_id` citations
-
-Second, the project has a small retrieval baseline:
-
-```powershell
-.\.venv\Scripts\kg-agent.exe eval-retrieval --output reports\generated\bm25_eval.json
-```
-
-The current baseline uses [examples/retrieval_eval.json](examples/retrieval_eval.json), an initial 8-question engineering set focused on TS 24.501 section retrieval. It reports Recall@K and MRR for whether the retriever surfaces chunks from the expected sections. This is useful as a regression check, but it is not a full telecom LLM benchmark.
-
-### GSMA Open-Telco benchmark alignment
-
 The evaluation direction is inspired by the [GSMA Open-Telco LLM benchmark](https://hugging-face.cn/blog/otellm/gsma-benchmarks), which emphasizes telecom-specific evaluation rather than generic chat quality. The GSMA benchmark article highlights the need to test:
 
 - telecom domain knowledge and technical terminology, similar to TeleQnA
@@ -249,65 +181,3 @@ The runtime uses the OpenAI Python SDK and the Responses API tool-calling format
 Some custom OpenAI-compatible endpoints support basic `/v1/responses` calls but do not support stateful `previous_response_id` continuation consistently. The agent includes a narrow fallback for this case: if the provider reports that a response item was created under a different Azure OpenAI resource, the runtime retries the tool-output step without `previous_response_id` and with minimal function-call items.
 
 See [docs/api_configuration.md](docs/api_configuration.md).
-
-## Data Provenance
-
-The existing telecom knowledge graph is third-party data, not created by this repository.
-
-Dataset:
-
-- [GSMA/telecom-kg-rel19](https://huggingface.co/datasets/GSMA/telecom-kg-rel19)
-
-Target specification:
-
-- 3GPP TS 24.501 v19.2.0
-- Source code: `24501-j20`
-- Official archive: `https://www.3gpp.org/ftp/Specs/archive/24_series/24.501/24501-j20.zip`
-
-Downloaded specifications, generated chunks, generated indexes, and bulk third-party data are excluded from Git by default.
-
-## Development
-
-Run tests:
-
-```powershell
-$env:PYTHONPATH='tests'
-.\.venv\Scripts\python.exe -m unittest discover -s tests -v
-```
-
-Run release safety checks:
-
-```powershell
-.\scripts\check_release.ps1
-```
-
-Optional dev checks after installing `.[dev]`:
-
-```powershell
-.\.venv\Scripts\python.exe -m ruff check .
-.\.venv\Scripts\python.exe -m pyright
-```
-
-## Scope
-
-This project is not:
-
-- a complete implementation of every 3GPP specification
-- a replacement for official standards documents
-- a guarantee of standards compliance
-- a production network decision system
-
-Use it as a research and demonstration project for evidence-grounded telecom standards question answering.
-
-## Acknowledgements
-
-- GSMA and KU-DF for publishing the telecom knowledge-graph dataset
-- 3GPP for the technical specifications on which the domain data is based
-- OpenAI-compatible APIs for the runtime agent
-- Claude Code / Codex-style agentic development workflows for implementation assistance
-
-## License
-
-Source code in this repository is licensed under the MIT License. See [LICENSE](LICENSE).
-
-Third-party datasets and standards documents have their own terms. See [NOTICE](NOTICE).
