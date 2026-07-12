@@ -1,0 +1,43 @@
+[
+  {
+    "id": "registration-update-initiation",
+    "question": "Under which conditions does the UE initiate a mobility registration update?",
+    "required_sections": ["5.5.1.3.2"]
+  },
+  {
+    "id": "registration-common-procedure",
+    "question": "Which common 5GMM procedures may the AMF initiate during registration?",
+    "required_sections": ["5.5.1.3.3"]
+  },
+  {
+    "id": "replay-protection",
+    "question": "How is replay protection handled for NAS signalling messages?",
+    "required_sections": ["4.4.3.2"]
+  },
+  {
+    "id": "nas-integrity-ue",
+    "question": "How does the UE perform integrity checking of NAS signalling messages?",
+    "required_sections": ["4.4.4.2"]
+  },
+  {
+    "id": "nas-integrity-amf",
+    "question": "How does the AMF perform integrity checking of NAS signalling messages?",
+    "required_sections": ["4.4.4.3"]
+  },
+  {
+    "id": "initial-nas-protection",
+    "question": "Which initial NAS signalling messages can be sent without integrity protection?",
+    "required_sections": ["4.4.6"]
+  },
+  {
+    "id": "usage-setting",
+    "question": "What is the UE usage setting and how is it used for domain selection?",
+    "required_sections": ["4.3.1", "4.3.2"]
+  },
+  {
+    "id": "network-slice-authentication",
+    "question": "How is network slice-specific authentication and authorization handled?",
+    "required_sections": ["4.6.2.4"]
+  }
+]
+

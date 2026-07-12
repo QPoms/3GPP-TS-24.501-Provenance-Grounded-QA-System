@@ -1,0 +1,70 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "telecom-graph-agent"
+version = "0.1.0"
+description = "Evidence-grounded GraphRAG agent for 3GPP TS 24.501"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Project contributors" }]
+keywords = ["3gpp", "telecom", "graphrag", "rag", "knowledge-graph", "openai"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Telecommunications Industry",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Information Analysis",
+]
+dependencies = [
+  "networkx>=3.3,<4",
+  "numpy>=1.26,<3",
+  "openai>=1.68,<3",
+  "pydantic>=2.7,<3",
+  "python-dotenv>=1.0,<2",
+  "typer>=0.12,<1",
+]
+
+[project.optional-dependencies]
+ingestion = [
+  "pymupdf>=1.24,<2",
+  "python-docx>=1.1,<2",
+]
+retrieval = [
+  "faiss-cpu>=1.8,<2",
+  "rank-bm25>=0.2.2,<1",
+  "sentence-transformers>=3,<6",
+]
+app = ["streamlit>=1.36,<2"]
+dev = [
+  "pytest>=8,<10",
+  "pyright>=1.1,<2",
+  "ruff>=0.5,<1",
+]
+
+[project.scripts]
+kg-agent = "telecom_agent.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/telecom_agent"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.pyright]
+pythonVersion = "3.11"
+typeCheckingMode = "standard"
+include = ["src", "tests"]

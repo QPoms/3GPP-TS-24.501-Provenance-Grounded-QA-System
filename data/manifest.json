@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "artifacts": [
+    {
+      "artifact_id": "3gpp-ts-24501-v19.2.0",
+      "kind": "specification-archive",
+      "source_url": "https://www.3gpp.org/ftp/Specs/archive/24_series/24.501/24501-j20.zip",
+      "local_path": "data/external/specifications/24501-j20.zip",
+      "sha256": "abd67c65188e17963f8d54f79e8170a81d73e9167af848de56d481e8fdc037bf",
+      "retrieved_at": "2026-07-12",
+      "publisher": "3GPP",
+      "license": "Refer to the official 3GPP legal and copyright terms",
+      "spec_id": "3GPP TS 24.501",
+      "release": "Rel-19",
+      "version": "19.2.0",
+      "source_code": "24501-j20"
+    },
+    {
+      "artifact_id": "3gpp-ts-24501-v19.2.0-docx",
+      "kind": "specification-document",
+      "source_url": "https://www.3gpp.org/ftp/Specs/archive/24_series/24.501/24501-j20.zip",
+      "local_path": "data/external/specifications/24501-j20/24501-j20.docx",
+      "sha256": "0f36c754bfdcfee5b000ba8572d9242a20cbd256359e896b4fb77710fd033ceb",
+      "retrieved_at": "2026-07-12",
+      "publisher": "3GPP",
+      "license": "Refer to the official 3GPP legal and copyright terms",
+      "spec_id": "3GPP TS 24.501",
+      "release": "Rel-19",
+      "version": "19.2.0",
+      "source_code": "24501-j20",
+      "derived_from": "3gpp-ts-24501-v19.2.0"
+    },
+    {
+      "artifact_id": "gsma-ku-df-rel19-telecom-kg",
+      "kind": "knowledge-graph-dataset",
+      "source_url": "https://huggingface.co/datasets/GSMA/telecom-kg-rel19",
+      "local_path": "data/tkg/rel19_3gpp_telecom_kg.graphml",
+      "sha256": null,
+      "retrieved_at": null,
+      "publisher": "GSMA / KU-DF",
+      "license": "See the upstream dataset card",
+      "spec_id": null,
+      "release": "Rel-19",
+      "version": null
+    }
+  ]
+}

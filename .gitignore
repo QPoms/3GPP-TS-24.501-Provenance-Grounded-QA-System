@@ -1,0 +1,41 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.pyright/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# Large or generated data
+data/external/specifications/*
+data/processed/*
+data/indexes/*
+data/.gitattributes
+data/tkg/
+data/chunks/
+data/mappings/
+!data/external/specifications/.gitkeep
+!data/processed/.gitkeep
+!data/indexes/.gitkeep
+
+# Local reports and application state
+reports/generated/*
+!reports/generated/.gitkeep
+.streamlit/secrets.toml
+docs/superpowers/
+
+# Workspace-only material not part of the open-source project
+.agents/
+.codex/
+outputs/
+previews/
+claude-proxy.ps1
+comp.js
+future-talent.html
+future-talent-challenges.json

@@ -1,0 +1,26 @@
+# Notices
+
+This repository contains source code and documentation for a TS 24.501-focused
+GraphRAG agent. The project source code is licensed under the MIT License.
+
+## Third-party data
+
+The telecom knowledge graph referenced by this project originates from the
+3GPP Release 19 Telecom Knowledge Graph published by GSMA and developed by
+Khalifa University Research Institute for Digital Future (KU-DF).
+
+Dataset page:
+
+https://huggingface.co/datasets/GSMA/telecom-kg-rel19
+
+The upstream graph, mappings, and metadata are third-party materials. Check the
+upstream dataset card and license before redistributing them.
+
+## Standards documents
+
+3GPP specifications are not authored by this project. Downloaded specification
+archives, extracted DOCX/PDF files, parsed chunks, and generated indexes are
+kept out of Git by default. Users are responsible for obtaining standards
+documents from appropriate sources and complying with applicable terms.
+
+The local development pipeline used TS 24.501 v19.2.0, source code `24501-j20`.
