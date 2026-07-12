@@ -21,7 +21,7 @@ The current prototype contains a working TS 24.501-focused GraphRAG pipeline wit
 
 ### 1. TS 24.501 knowledge base construction
 
-The project reconstructs a usable TS 24.501 evidence base from the official `24501-j20` specification source, rather than relying on the empty public `text` fields in the upstream chunk metadata.
+The project reconstructs a usable TS 24.501 evidence base from the official `24501-j20` specification source.
 
 The ingestion pipeline preserves standards-document structure:
 
