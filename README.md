@@ -18,13 +18,51 @@ The repository is intentionally scoped to one specification first. That keeps pa
 
 ## What Works Now
 
-- Parses TS 24.501 v19.2.0 (`24501-j20`) into section-aware chunks.
-- Exports a provenance-focused TS 24.501 working subgraph from the Release 19 telecom KG.
-- Searches the specification with telecom-aware BM25 tokenization.
-- Provides bounded graph tools for entity resolution, neighborhood expansion, and path search.
-- Runs a GPT tool-calling agent through an OpenAI-compatible Responses API endpoint.
-- Rejects final answers that cite `chunk_id` values not returned by tools in the same run.
-- Includes tests for retrieval, graph export, agent tool loops, citation guards, and custom endpoint fallback behavior.
+The current prototype contains a working TS 24.501-focused GraphRAG pipeline with three connected layers:
+
+### 1. TS 24.501 knowledge base construction
+
+The project reconstructs a usable TS 24.501 evidence base from the official `24501-j20` specification source, rather than relying on the empty public `text` fields in the upstream chunk metadata.
+
+The ingestion pipeline preserves standards-document structure:
+
+- section numbers and section titles
+- heading paths
+- paragraph and table boundaries
+- page metadata where available
+- stable `chunk_id` values for citation checks
+
+This produces a text corpus that can answer version-specific questions about TS 24.501 v19.2.0 with traceable source metadata.
+
+### 2. TS 24.501-specific knowledge graph
+
+The project uses the public Release 19 telecom knowledge graph as a seed corpus, then constructs a TS 24.501 working graph around the `24501-j20` provenance signal.
+
+The graph-building process:
+
+- identifies graph nodes and relations whose provenance points to TS 24.501
+- keeps relevant endpoint nodes so retained relations remain interpretable
+- preserves contextual links to neighboring telecom concepts when they help explain a TS 24.501 entity
+- aligns graph entities and relations back to reconstructed specification chunks
+- records whether each graph-to-text match is verified, high-confidence, or candidate-level
+
+In other words, this is not a generic graph dump. It is a TS 24.501-centered graph layer designed to support standards question answering, entity inspection, neighborhood expansion, and bounded path search.
+
+### 3. Evidence-grounded GPT agent
+
+The runtime agent answers through bounded tools instead of free-form model memory:
+
+- `search_spec` retrieves relevant TS 24.501 chunks
+- `resolve_entities` maps user terms to graph entities
+- `inspect_entity` returns graph properties and aligned evidence
+- `expand_graph` explores bounded neighborhoods
+- `find_paths` searches limited relationship paths
+
+The agent runs through an OpenAI-compatible Responses API endpoint, supports custom base URLs, and includes a fallback for providers that support tool calls but do not reliably support stateful `previous_response_id` continuation.
+
+Citation safety is enforced programmatically: if the final answer cites a `chunk_id` that was not returned by a tool during the same run, the answer is rejected.
+
+The result is a CLI-ready prototype that can search the specification, inspect the graph, run retrieval evaluation, and answer TS 24.501 questions with explicit evidence limitations.
 
 ## Architecture
 
