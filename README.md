@@ -156,6 +156,54 @@ Known limitations:
 - Graph evidence is strongest around definitions and early security/access-control sections; many procedural answers still rely primarily on text retrieval.
 - The Streamlit UI is not included yet. The CLI is the supported interface.
 
+## Testing and Evaluation
+
+The current test suite has two layers.
+
+First, the repository has deterministic engineering tests:
+
+```powershell
+$env:PYTHONPATH='tests'
+.\.venv\Scripts\python.exe -m unittest discover -s tests -v
+```
+
+These tests cover:
+
+- DOCX ingestion and section/table preservation
+- telecom-aware BM25 tokenization and section filtering
+- graph audit, subgraph export, entity resolution, neighbors, and paths
+- graph-to-text lexical alignment
+- retrieval metric calculation
+- vector/RRF retrieval behavior with a fake embedder
+- GPT Responses API tool-loop behavior using fake clients
+- custom endpoint fallback for `previous_response_id` compatibility issues
+- rejection of invented `chunk_id` citations
+
+Second, the project has a small retrieval baseline:
+
+```powershell
+.\.venv\Scripts\kg-agent.exe eval-retrieval --output reports\generated\bm25_eval.json
+```
+
+The current baseline uses [examples/retrieval_eval.json](examples/retrieval_eval.json), an initial 8-question engineering set focused on TS 24.501 section retrieval. It reports Recall@K and MRR for whether the retriever surfaces chunks from the expected sections. This is useful as a regression check, but it is not a full telecom LLM benchmark.
+
+### GSMA Open-Telco benchmark alignment
+
+The evaluation direction is inspired by the [GSMA Open-Telco LLM benchmark](https://hugging-face.cn/blog/otellm/gsma-benchmarks), which emphasizes telecom-specific evaluation rather than generic chat quality. The GSMA benchmark article highlights the need to test:
+
+- telecom domain knowledge and technical terminology, similar to TeleQnA
+- 3GPP technical-document understanding and extraction, similar to 3GPPTdocs
+- mathematical and logical reasoning, represented by MATH500 and FOLIO
+- practical telecom tasks such as troubleshooting, optimization, safety, and compliance
+
+This repository currently focuses on the second category: **3GPP technical-document understanding for TS 24.501**. For that reason, the project does not claim an official GSMA Open-Telco leaderboard score. Instead, the evaluation roadmap is:
+
+1. Expand the reviewed TS 24.501 question set from 8 questions to a larger mix of definitions, procedures, conditions, message fields, cross-references, and insufficient-evidence cases.
+2. Measure retrieval quality with Recall@K, MRR, and section-level coverage.
+3. Measure answer quality with citation accuracy, unsupported-claim rate, answer-point coverage, and evidence-limitation quality.
+4. Add task families inspired by GSMA's categories: TeleQnA-style terminology questions, 3GPP document-understanding questions, logical cross-section reasoning, and security/compliance scenarios.
+5. Keep benchmark data, prompts, model configuration, and generated reports reproducible so results can be compared under clear conditions.
+
 ## API Compatibility
 
 The runtime uses the OpenAI Python SDK and the Responses API tool-calling format.
