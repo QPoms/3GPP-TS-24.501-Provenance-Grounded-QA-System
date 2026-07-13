@@ -1,0 +1,1522 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="release" for="edge" attr.name="release" attr.type="string"/>
+<key id="source_file" for="edge" attr.name="source_file" attr.type="string"/>
+<key id="conditions" for="edge" attr.name="conditions" attr.type="string"/>
+<key id="created_at" for="edge" attr.name="created_at" attr.type="string"/>
+<key id="file_path" for="edge" attr.name="file_path" attr.type="string"/>
+<key id="source_id" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="keywords" for="edge" attr.name="keywords" attr.type="string"/>
+<key id="description" for="edge" attr.name="description" attr.type="string"/>
+<key id="weight" for="edge" attr.name="weight" attr.type="string"/>
+<key id="raw_entity_id" for="node" attr.name="raw_entity_id" attr.type="string"/>
+<key id="release" for="node" attr.name="release" attr.type="string"/>
+<key id="source_file" for="node" attr.name="source_file" attr.type="string"/>
+<key id="created_at" for="node" attr.name="created_at" attr.type="string"/>
+<key id="file_path" for="node" attr.name="file_path" attr.type="string"/>
+<key id="entity_type" for="node" attr.name="entity_type" attr.type="string"/>
+<key id="description" for="node" attr.name="description" attr.type="string"/>
+<key id="source_id" for="node" attr.name="source_id" attr.type="string"/>
+<key id="entity_id" for="node" attr.name="entity_id" attr.type="string"/>
+<graph edgedefault="directed"><node id="DEF">
+  <data key="entity_id">DEF</data>
+  <data key="source_id">chunk-b4a91583c33b0ad8a899bd7d5fd7b3a8</data>
+  <data key="description">The Support Team is responsible for the management of the work of the TSGs, including editorship and management of specifications under TSG change control, preparation and support for meetings (including meeting reports) of TSGs, their Working Groups, and subgroups, in descending priority, and liaison with other bodies and relevant groups and institutions.</data>
+  <data key="entity_type">UNKNOWN</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/21_series/21900-j00.md3.1</data>
+  <data key="created_at">1770192435</data>
+  <data key="source_file">Rel-19/21_series/21900-j00/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+  <data key="raw_entity_id">DEF</data>
+</node>
+<node id="SL Positioning Server UE">
+  <data key="entity_id">SL Positioning Server UE</data>
+  <data key="entity_type">Concept</data>
+  <data key="description">SL Positioning Server UE is a term defined in 3GPP TS 38.300 [27] and applies to the present document.</data>
+  <data key="source_id">chunk-49e52242a2012fd5ddb087404c976351</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md3.1</data>
+  <data key="created_at">1770205537</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+  <data key="raw_entity_id">SL Positioning Server UE</data>
+</node>
+<node id="NCR-MT">
+  <data key="entity_id">NCR-MT</data>
+  <data key="entity_type">Concept</data>
+  <data key="description">NCR-MT is a term defined in 3GPP TS 24.572 [64] and applies to the present document.</data>
+  <data key="source_id">chunk-49e52242a2012fd5ddb087404c976351</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md3.1</data>
+  <data key="created_at">1770205537</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+  <data key="raw_entity_id">NCR-MT</data>
+</node>
+<node id="UE's usage setting">
+  <data key="entity_id">UE's usage setting</data>
+  <data key="entity_type">Concept</data>
+  <data key="description">UE's usage setting is defined in 3GPP TS 24.301 [15] and applies to voice capable UEs in 5GS. It indicates whether the UE has a preference for voice services over data services or vice versa. Voice services include IMS voice, and data services include any kind of user data transfer without a voice media component. The setting can be configured as "voice centric" or "data centric". If the UE is capable of S1 mode, a single UE's usage setting applies to both modes.</data>
+  <data key="source_id">chunk-4ae2a4e75e3d537b881977cd5936a0a2</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.3.1</data>
+  <data key="created_at">1770205570</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+  <data key="raw_entity_id">UE's usage setting</data>
+</node>
+<node id="voice centric">
+  <data key="entity_id">voice centric</data>
+  <data key="entity_type">Terminology</data>
+  <data key="description"></data>
+  <data key="source_id">chunk-4ae2a4e75e3d537b881977cd5936a0a2</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.3.1</data>
+  <data key="created_at">1770205571</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+  <data key="raw_entity_id">voice centric</data>
+</node>
+<node id="voice services">
+  <data key="entity_id">voice services</data>
+  <data key="source_id">chunk-4ae2a4e75e3d537b881977cd5936a0a2</data>
+  <data key="description">Voice services include IMS voice</data>
+  <data key="entity_type">UNKNOWN</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.3.1</data>
+  <data key="created_at">1770205607</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+  <data key="raw_entity_id">voice services</data>
+</node>
+<node id="data services">
+  <data key="entity_id">data services</data>
+  <data key="source_id">chunk-4ae2a4e75e3d537b881977cd5936a0a2</data>
+  <data key="description">Data services include any kind of user data transfer without a voice media component</data>
+  <data key="entity_type">UNKNOWN</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.3.1</data>
+  <data key="created_at">1770205609</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+  <data key="raw_entity_id">data services</data>
+</node>
+<node id="data centric">
+  <data key="entity_id">data centric</data>
+  <data key="source_id">chunk-4ae2a4e75e3d537b881977cd5936a0a2</data>
+  <data key="description">The UE's usage setting can be set to "data centric"</data>
+  <data key="entity_type">UNKNOWN</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.3.1</data>
+  <data key="created_at">1770205612</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+  <data key="raw_entity_id">data centric</data>
+</node>
+<node id="5G NAS security">
+  <data key="entity_id">5G NAS security</data>
+  <data key="entity_type">Concept</data>
+  <data key="description">5G NAS security refers to the security mechanisms applied in the 5G Non-Access Stratum layer to ensure confidentiality, integrity, and authentication during communication between the UE and the network. It includes the handling of 5G-EA0 for cryptographic operations.</data>
+  <data key="source_id">chunk-c3766b0bd2da84eace3065f40f55863c</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.2</data>
+  <data key="created_at">1770205635</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+  <data key="raw_entity_id">5G NAS security</data>
+</node>
+<node id="KAMF derivation">
+  <data key="entity_id">KAMF derivation</data>
+  <data key="entity_type">Concept</data>
+  <data key="description">KAMF derivation is the process of generating a new KAMF, which triggers the resetting of downlink and uplink NAS COUNT to zero for non-3GPP access.</data>
+  <data key="source_id">chunk-7e397641e752f61c7495ea9622b8103c</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.2.3</data>
+  <data key="created_at">1770205745</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+  <data key="raw_entity_id">KAMF derivation</data>
+</node>
+<node id="S1 mode to N1 mode NAS transparent container">
+  <data key="entity_id">S1 mode to N1 mode NAS transparent container</data>
+  <data key="entity_type">Technology</data>
+  <data key="description">S1 mode to N1 mode NAS transparent container is a data container used in CONNECTED mode that carries NAS signaling information and is treated as an implicit SECURITY MODE COMMAND message for the UE and AMF.</data>
+  <data key="source_id">chunk-271beb7d1fe2c1b6d63a054506e7b878</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.3.1</data>
+  <data key="created_at">1770205776</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+  <data key="raw_entity_id">S1 mode to N1 mode NAS transparent container</data>
+</node>
+<node id="SECURITY MODE COMMAND message">
+  <data key="entity_id">SECURITY MODE COMMAND message</data>
+  <data key="entity_type">Concept</data>
+  <data key="description">The SECURITY MODE COMMAND message is a signaling message sent by the AMF over one access to activate the same mapped 5G NAS security context on another access, used when the UE is in 5GMM-CONNECTED mode over non-3G&lt;SEP&gt;SECURITY MODE COMMAND message is a NAS message sent by the AMF to the UE to initiate or&lt;SEP&gt;SECURITY MODE COMMAND message is a control message used to initiate security mode procedures, and in CONNECTED mode, the S1 mode to N1 mode NAS transparent container is treated as an implicit instance of this message for both the UE and AMF.</data>
+  <data key="source_id">chunk-271beb7d1fe2c1b6d63a054506e7b878&lt;SEP&gt;chunk-1bdc80f9e0e79539377212798dce1ac1&lt;SEP&gt;chunk-ba3366856f62aa455b0deeeeb8040614</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.2.2&lt;SEP&gt;../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.2.6&lt;SEP&gt;../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.3.1</data>
+  <data key="created_at">1770205998</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+  <data key="raw_entity_id">SECURITY MODE COMMAND message</data>
+</node>
+<node id="Replay protection">
+  <data key="entity_id">Replay protection</data>
+  <data key="entity_type">Concept</data>
+  <data key="description">Replay protection is a security feature that ensures a single NAS message is not accepted more than once by the receiver. It is required for received NAS messages in both the AMF and the UE. For a given 5G NAS security context, each NAS COUNT value must be accepted at most once and only if message integrity verification succeeds.</data>
+  <data key="source_id">chunk-1b7f566ef414e18b1d67b12d8cedbf12</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.3.2</data>
+  <data key="created_at">1770205804</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+  <data key="raw_entity_id">Replay protection</data>
+</node>
+<node id="Integrity protection of NAS signall">
+  <data key="entity_id">Integrity protection of NAS signall</data>
+  <data key="entity_type">Concept</data>
+  <data key="description">Integrity protection of NAS signall is a security feature defined in section 4.4.4 that ensures the authenticity and integrity of Non-Access Stratum (NAS) signaling messages. It prevents unauthorized modification of NAS messages during transmission.</data>
+  <data key="source_id">chunk-87c075f0cf0189cf4a39f81e2c8777f4</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.4</data>
+  <data key="created_at">1770205916</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+  <data key="raw_entity_id">Integrity protection of NAS signall</data>
+</node>
+<node id="NAS COUNT wrap around">
+  <data key="entity_id">NAS COUNT wrap around</data>
+  <data key="entity_type">Concept</data>
+  <data key="description">NAS COUNT wrap around is a condition detected by the AMF when either the downlink NAS COUNT or the uplink NAS COUNT is close to 224, triggering specific actions to maintain security and signaling integrity in the 5G network.</data>
+  <data key="source_id">chunk-7ddc7021e3bbd564e76be4d14fa69d8c</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.3.5</data>
+  <data key="created_at">1770205902</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+  <data key="raw_entity_id">NAS COUNT wrap around</data>
+</node>
+<node id="CIoT small data container IE">
+  <data key="entity_id">CIoT small data container IE</data>
+  <data key="entity_type">Technology</data>
+  <data key="description">CIoT small data container IE is an information element that contains a value part which shall be deciphered by the UE. The message handling follows the specification in subclause 5.6.1.4.2.&lt;SEP&gt;CIoT small data container IE is a specific information element used in CONTROL PLANE SERVICE REQUEST messages to carry non-cleartext data for CIoT (Cellular Internet of Things) services. It is ciphered only when it is the sole non-cleartext IE being sent.</data>
+  <data key="source_id">chunk-2cf58586d0687b7b5ca57670c605e12e&lt;SEP&gt;chunk-2e5e312e3142cb805667cbfa885449ce</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.6</data>
+  <data key="created_at">1770205998</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+  <data key="raw_entity_id">CIoT small data container IE</data>
+</node>
+<node id="initial NAS message">
+  <data key="entity_id">initial NAS message</data>
+  <data key="entity_type">Concept</data>
+  <data key="description">The initial NAS message is the first NAS message&lt;SEP&gt;initial NAS message is a message sent by the UE that includes cleartext information elements only, transmitted via the access type associated with the&lt;SEP&gt;Initial NAS message is a signaling message sent by the NAS to initiate a procedure, such as a connection request, when needed after barring is alleviated.</data>
+  <data key="source_id">chunk-2cf58586d0687b7b5ca57670c605e12e&lt;SEP&gt;chunk-82b9ef174e9ae7d49b678ced2326c9fb&lt;SEP&gt;chunk-4810432d3228af17ae91a78cddb099e4</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.2.5&lt;SEP&gt;../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.6&lt;SEP&gt;../3GPP-trunked/Rel-19/24_series/24501-j20.md4.5.4.1</data>
+  <data key="created_at">1770206169</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+  <data key="raw_entity_id">initial NAS message</data>
+</node>
+<node id="REF">
+  <data key="entity_id">REF</data>
+  <data key="source_id">chunk-7f18eea04acb1ef0dcaf4a01a17cdc1d</data>
+  <data key="description">Clause 5.2.3.2.2 of 3GPP TS 29.5</data>
+  <data key="entity_type">UNKNOWN</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/29_series/29504-j20.md6.1.2.3.2</data>
+  <data key="created_at">1770192442</data>
+  <data key="source_file">Rel-19/21_series/21900-j00/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+  <data key="raw_entity_id">REF</data>
+</node>
+<node id="3GPP (NAUN3) device">
+  <data key="entity_id">3GPP (NAUN3) device</data>
+  <data key="entity_type">Concept</data>
+  <data key="description">3GPP (NAUN3) device is a device defined in the present document for which specific terms and definitions are provided, related to SL Positioning Server UE and NCR-MT.</data>
+  <data key="source_id">chunk-49e52242a2012fd5ddb087404c976351</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md3.1</data>
+  <data key="created_at">1770205535</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+  <data key="raw_entity_id">3GPP (NAUN3) device</data>
+</node>
+<node id="UE doma">
+  <data key="entity_id">UE doma</data>
+  <data key="entity_type">Concept</data>
+  <data key="description">UE doma is a concept referenced in section 4.3 and is intended to be deleted.</data>
+  <data key="source_id">chunk-65f11384ffa18378873be8ecc33afe17</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.3</data>
+  <data key="created_at">1770205532</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+  <data key="raw_entity_id">UE doma</data>
+</node>
+<node id="5G NAS security context">
+  <data key="entity_id">5G NAS security context</data>
+  <data key="entity_type">Concept</data>
+  <data key="description">The 5G NAS security context is a security state maintained by both the User Equipment (UE) and the Access and Mobility Management Function (AMF) to enable secure exchange of Non-Access Stratum (NAS) signaling messages in 5G networks. It encompasses critical security parameters, including integrity protection, ciphering, NAS COUNT values (both uplink and downlink), message authentication codes, selected NAS algorithms, and a key set identifier (ngKSI). The context is established during primary authentication and key agreement, security mode control procedures, N1-to-N1 handovers, or inter-system transitions from S1 mode to N1 mode. It supports both 3GPP and non-3GPP access within the same PLMN, maintaining separate NAS COUNT counters for each access type—resulting in two pairs of counters when both access types are used. The context may be native (independent of prior contexts) or mapped (derived from a previous context, e.g., during handover), and is activated upon successful registration with the same PLMN over either 3GPP or non-3GPP access. The current 5G NAS security context refers to the most recently established and active instance, while non-current contexts are retained temporarily to ensure continuity&lt;SEP&gt;A 5G NAS security context is a set of security parameters maintained by the AMF and UE to enable secure exchange of NAS messages. It is required for integrity protection and encryption of NAS signaling, and its absence triggers special handling rules for certain messages.</data>
+  <data key="source_id">chunk-e859fb10619faf70104c8f8867850cfb&lt;SEP&gt;chunk-ec223676ecf152c40ae34db586e1d91b&lt;SEP&gt;chunk-976f107a496501dc6ebdc7b3437b39be&lt;SEP&gt;chunk-271beb7d1fe2c1b6d63a054506e7b878&lt;SEP&gt;chunk-7ddc7021e3bbd564e76be4d14fa69d8c&lt;SEP&gt;chunk-95c9d65358373078ace4933aae94b9f3&lt;SEP&gt;chunk-82b9ef174e9ae7d49b678ced2326c9fb&lt;SEP&gt;chunk-335a5e81ee52d4365dddefb35b30af5d&lt;SEP&gt;chunk-1bdc80f9e0e79539377212798dce1ac1&lt;SEP&gt;chunk-0031ba031d5089753ff47b861f398139&lt;SEP&gt;chunk-ba3366856f62aa455b0deeeeb8040614&lt;SEP&gt;chunk-021b79a7cc50c12d66933dc161261781&lt;SEP&gt;chunk-ba4d4e7481832a002ba5bfa188c4fa2d&lt;SEP&gt;chunk-1b7f566ef414e18b1d67b12d8cedbf12&lt;SEP&gt;chunk-daecd9cfa64de8bf371ec61f98e7f366</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.2.1.1&lt;SEP&gt;../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.2.1.3&lt;SEP&gt;../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.2.1.2&lt;SEP&gt;../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.2.2&lt;SEP&gt;../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.2.3&lt;SEP&gt;../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.2.5&lt;SEP&gt;../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.2.6&lt;SEP&gt;../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.3.1&lt;SEP&gt;../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.3.2&lt;SEP&gt;../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.3.5&lt;SEP&gt;../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.4.1&lt;SEP&gt;../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.4.3</data>
+  <data key="created_at">1770206049</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+  <data key="raw_entity_id">5G NAS security context</data>
+</node>
+<node id="Handling of NAS COUNT and NAS seq">
+  <data key="entity_id">Handling of NAS COUNT and NAS seq</data>
+  <data key="entity_type">Concept</data>
+  <data key="description">Handling of NAS COUNT and NAS seq is a procedure defined in section 4.4.3 that manages the synchronization and integrity of NAS (Non-Access Stratum) counters and sequence numbers in the context of mobile network signaling.</data>
+  <data key="source_id">chunk-973353cfa5a5c8d6170250b347352435</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.3</data>
+  <data key="created_at">1770205750</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+  <data key="raw_entity_id">Handling of NAS COUNT and NAS seq</data>
+</node>
+<node id="Integrity protection and verification">
+  <data key="entity_id">Integrity protection and verification</data>
+  <data key="entity_type">Concept</data>
+  <data key="description">Integrity protection and verification is a security procedure defined in subclause 4.4.3.3 that ensures the authenticity and integrity of NAS messages. The sender uses the locally stored NAS COUNT as input to the integrity protection algorithm, while the receiver uses the NAS sequence number from the received message and an estimated NAS overflow counter to form the NAS COUNT input for verification. The algorithm is specified in 3GPP TS 33.501 [24].</data>
+  <data key="source_id">chunk-728e27595f36b4b4291b79a1843b7f25</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.3.3</data>
+  <data key="created_at">1770205806</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+  <data key="raw_entity_id">Integrity protection and verification</data>
+</node>
+<node id="SECURITY PROTECTED 5GS NAS MESSAGE message">
+  <data key="entity_id">SECURITY PROTECTED 5GS NAS MESSAGE message</data>
+  <data key="entity_type">Signal</data>
+  <data key="description"></data>
+  <data key="source_id">chunk-728e27595f36b4b4291b79a1843b7f25</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.3.3</data>
+  <data key="created_at">1770205806</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+  <data key="raw_entity_id">SECURITY PROTECTED 5GS NAS MESSAGE message</data>
+</node>
+<node id="B-N1 mode">
+  <data key="entity_id">B-N1 mode</data>
+  <data key="entity_type">Concept</data>
+  <data key="description">B-N1 mode is a defined operational mode referenced in section 4.6 Net.</data>
+  <data key="source_id">chunk-e205dce748bba0238507c0e1f1136235</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.6</data>
+  <data key="created_at">1770206170</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+  <data key="raw_entity_id">B-N1 mode</data>
+</node>
+<node id="Mobility manage">
+  <data key="entity_id">Mobility manage</data>
+  <data key="entity_type">Concept</data>
+  <data key="description">Mobility manage is a procedure or function related to mobility management, referenced in section 4.6.2.</data>
+  <data key="source_id">chunk-16b99f2ac364fde951916508883f20b6</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.6.2</data>
+  <data key="created_at">1770206173</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+  <data key="raw_entity_id">Mobility manage</data>
+</node>
+<node id="UE">
+  <data key="entity_id">UE</data>
+  <data key="entity_type">Terminology&lt;SEP&gt;UNKNOWN</data>
+  <data key="description">The UE is in a powered down state as described in section 5.5.1</data>
+  <data key="source_id">chunk-e8d9a254d791c3f04aceb95963ada7fc&lt;SEP&gt;chunk-29b9cf63f279c26271e1aa0b279caa66</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/23_series/23700-66-j00.md5.3.1&lt;SEP&gt;../3GPP-trunked/Rel-19/22_series/22989-j40.md5.5.1</data>
+  <data key="created_at">1770200794&lt;SEP&gt;1770177482</data>
+  <data key="source_file">Rel-19/22_series/22011-j50/graph_chunk_entity_relation.graphml&lt;SEP&gt;Rel-19/22_series/22989-j40/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+  <data key="raw_entity_id">UE&lt;SEP&gt;UE)##</data>
+</node>
+<node id="Access control">
+  <data key="entity_id">Access control</data>
+  <data key="entity_type">Concept</data>
+  <data key="description">Access control is a security mechanism defined in section 4.5.4 that governs the ability of the UE to access network resources. It ensures that only authorized entities can perform specific actions within the network environment.</data>
+  <data key="source_id">chunk-5ae68e0b66f921b4da6680f802fd62c7</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.5.4</data>
+  <data key="created_at">1770206146</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+  <data key="raw_entity_id">Access control</data>
+</node>
+<node id="5GS">
+  <data key="entity_id">5GS</data>
+  <data key="entity_type">Technology&lt;SEP&gt;UNKNOWN</data>
+  <data key="description">5GS refers to the 5G System, the core network architecture of 5G, which includes enhancements for energy saving as part of its design and operational improvements.&lt;SEP&gt;Subscription and policy control mechanisms are integrated into 5GS to support energy efficiency and energy saving criteria</data>
+  <data key="source_id">chunk-be5f8d76d621562b8fe270d20e89138a&lt;SEP&gt;chunk-98779b8f478b5fc3df93a5f3e4c87f5c</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/23_series/23700-66-j00.md6.3.1&lt;SEP&gt;../3GPP-trunked/Rel-19/23_series/23700-66-j00.md6.11.1</data>
+  <data key="created_at">1770200848&lt;SEP&gt;1770201247</data>
+  <data key="source_file">Rel-19/22_series/22011-j50/graph_chunk_entity_relation.graphml&lt;SEP&gt;Rel-19/22_series/22369-j30/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+  <data key="raw_entity_id">5GS&lt;SEP&gt;5GS)##</data>
+</node>
+<node id="core network">
+  <data key="entity_id">core network</data>
+  <data key="entity_type">Technology</data>
+  <data key="description">The core network is the central part of the 5G System responsible for managing user sessions, mobility, and connectivity, and can be specifically targeted via subscription-based routing.</data>
+  <data key="source_id">chunk-e7d1889bd63abf66975edf27a9c9e024</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/22_series/22877-j00.md1</data>
+  <data key="created_at">1770200936</data>
+  <data key="source_file">Rel-19/22_series/22115-j00/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+  <data key="raw_entity_id">core network</data>
+</node>
+<node id="User Equipment">
+  <data key="entity_id">User Equipment</data>
+  <data key="entity_type">Terminology</data>
+  <data key="description"></data>
+  <data key="source_id">chunk-207e11146b6935634e6bfd131c4701a6</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/23_series/23700-66-j00.md6.18</data>
+  <data key="created_at">1770201663</data>
+  <data key="source_file">Rel-19/22_series/22125-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+  <data key="raw_entity_id">User Equipment</data>
+</node>
+<node id="NAS signall">
+  <data key="entity_id">NAS signall</data>
+  <data key="entity_type">Signal</data>
+  <data key="description">NAS signall refers to Non-Access Stratum signaling messages used for communication between the User Equipment and the core network, particularly for managing mobility and session control.</data>
+  <data key="source_id">chunk-87c075f0cf0189cf4a39f81e2c8777f4</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.4</data>
+  <data key="created_at">1770205917</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+  <data key="raw_entity_id">NAS signall</data>
+</node>
+<node id="voice capable UEs">
+  <data key="entity_id">voice capable UEs</data>
+  <data key="entity_type">Terminology</data>
+  <data key="description"></data>
+  <data key="source_id">chunk-4ae2a4e75e3d537b881977cd5936a0a2</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.3.1</data>
+  <data key="created_at">1770205571</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+  <data key="raw_entity_id">voice capable UEs</data>
+</node>
+<node id="5G-EA0">
+  <data key="entity_id">5G-EA0</data>
+  <data key="entity_type">Technology</data>
+  <data key="description">5G-EA0 is a security algorithm used in 5G Non-Access Stratum (NAS) procedures for authentication and key agreement. It is referenced in the context of handling 5G NAS security.&lt;SEP&gt;5G-EA0 is a selected 5G NAS security algorithm used by the UE for security processing.</data>
+  <data key="source_id">chunk-c3766b0bd2da84eace3065f40f55863c&lt;SEP&gt;chunk-2cf58586d0687b7b5ca57670c605e12e</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.2&lt;SEP&gt;../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.6</data>
+  <data key="created_at">1770206003</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+  <data key="raw_entity_id">5G-EA0</data>
+</node>
+<node id="NAS COUNT value">
+  <data key="entity_id">NAS COUNT value</data>
+  <data key="entity_type">Terminology</data>
+  <data key="description"></data>
+  <data key="source_id">chunk-1b7f566ef414e18b1d67b12d8cedbf12</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.3.2</data>
+  <data key="created_at">1770205804</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+  <data key="raw_entity_id">NAS COUNT value</data>
+</node>
+<node id="message integrity">
+  <data key="entity_id">message integrity</data>
+  <data key="source_id">chunk-1b7f566ef414e18b1d67b12d8cedbf12</data>
+  <data key="description">Replay protection only accepts a NAS COUNT value if message integrity verifies correctly</data>
+  <data key="entity_type">UNKNOWN</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.3.2</data>
+  <data key="created_at">1770205889</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+  <data key="raw_entity_id">message integrity</data>
+</node>
+<node id="CONNECTED mode">
+  <data key="entity_id">CONNECTED mode</data>
+  <data key="entity_type">Concept</data>
+  <data key="description">CONNECTED mode is a state in which the UE and AMF maintain an active connection, during which the S1 mode to N1 mode NAS transparent container is treated as an implicit SECURITY MODE COMMAND message for both the UE and the AMF.</data>
+  <data key="source_id">chunk-271beb7d1fe2c1b6d63a054506e7b878</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.3.1</data>
+  <data key="created_at">1770205776</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+  <data key="raw_entity_id">CONNECTED mode</data>
+</node>
+<node id="subclause 5.6.1.4.2">
+  <data key="entity_id">subclause 5.6.1.4.2</data>
+  <data key="entity_type">UNKNOWN</data>
+  <data key="description"></data>
+  <data key="source_id"></data>
+  <data key="file_path"></data>
+  <data key="created_at">1770205996</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+  <data key="raw_entity_id">subclause 5.6.1.4.2</data>
+</node>
+<edge source="DEF" target="SL Positioning Server UE" id="e000000">
+  <data key="weight">1.0</data>
+  <data key="description">SL Positioning Server UE is defined in 3GPP TS 38.300 [27] and applies to the present document</data>
+  <data key="keywords">Definition</data>
+  <data key="source_id">chunk-49e52242a2012fd5ddb087404c976351</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md3.1</data>
+  <data key="created_at">1770205574</data>
+  <data key="conditions">["3GPP (NAUN3) device"]</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="DEF" target="NCR-MT" id="e000001">
+  <data key="weight">1.0</data>
+  <data key="description">NCR-MT is defined in 3GPP TS 24.572 [64] and applies to the present document</data>
+  <data key="keywords">Definition</data>
+  <data key="source_id">chunk-49e52242a2012fd5ddb087404c976351</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md3.1</data>
+  <data key="created_at">1770205576</data>
+  <data key="conditions">["3GPP (NAUN3) device"]</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="DEF" target="UE's usage setting" id="e000002">
+  <data key="weight">1.0</data>
+  <data key="description">The UE's usage setting is defined in 3GPP TS 24.301 [15] and applies to voice capable UEs in 5GS, indicating whether the UE prefers voice services over data services or vice versa</data>
+  <data key="keywords">Definition</data>
+  <data key="source_id">chunk-4ae2a4e75e3d537b881977cd5936a0a2</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.3.1</data>
+  <data key="created_at">1770205605</data>
+  <data key="conditions">["voice capable UEs", "5GS"]</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="DEF" target="voice centric" id="e000003">
+  <data key="weight">1.0</data>
+  <data key="description">The UE's usage setting can be set to "voice centric"</data>
+  <data key="keywords">Definition</data>
+  <data key="source_id">chunk-4ae2a4e75e3d537b881977cd5936a0a2</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.3.1</data>
+  <data key="created_at">1770205610</data>
+  <data key="conditions">["UE's usage setting"]</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="DEF" target="voice services" id="e000004">
+  <data key="weight">1.0</data>
+  <data key="description">Voice services include IMS voice</data>
+  <data key="keywords">Definition</data>
+  <data key="source_id">chunk-4ae2a4e75e3d537b881977cd5936a0a2</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.3.1</data>
+  <data key="created_at">1770205607</data>
+  <data key="conditions">["UE's usage setting"]</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="DEF" target="data services" id="e000005">
+  <data key="weight">1.0</data>
+  <data key="description">Data services include any kind of user data transfer without a voice media component</data>
+  <data key="keywords">Definition</data>
+  <data key="source_id">chunk-4ae2a4e75e3d537b881977cd5936a0a2</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.3.1</data>
+  <data key="created_at">1770205609</data>
+  <data key="conditions">["UE's usage setting"]</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="DEF" target="data centric" id="e000006">
+  <data key="weight">1.0</data>
+  <data key="description">The UE's usage setting can be set to "data centric"</data>
+  <data key="keywords">Definition</data>
+  <data key="source_id">chunk-4ae2a4e75e3d537b881977cd5936a0a2</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.3.1</data>
+  <data key="created_at">1770205612</data>
+  <data key="conditions">["UE's usage setting"]</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="DEF" target="5G NAS security" id="e000007">
+  <data key="weight">1.0</data>
+  <data key="description">5G NAS security involves the handling of 5G-EA0 within the 5G Non-Access Stratum layer to provide authentication and key agreement between the UE and the network</data>
+  <data key="keywords">Definition</data>
+  <data key="source_id">chunk-c3766b0bd2da84eace3065f40f55863c</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.2</data>
+  <data key="created_at">1770205672</data>
+  <data key="conditions">["5G-EA0"]</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="DEF" target="KAMF derivation" id="e000008">
+  <data key="weight">1.0</data>
+  <data key="description">KAMF derivation is required to reset downlink NAS COUNT and uplink NAS COUNT to zero for non</data>
+  <data key="keywords">Definition</data>
+  <data key="source_id">chunk-7e397641e752f61c7495ea9622b8103c</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.2.3</data>
+  <data key="created_at">1770205815</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="DEF" target="S1 mode to N1 mode NAS transparent container" id="e000009">
+  <data key="weight">1.0</data>
+  <data key="description">The S1 mode to N1 mode NAS transparent container is treated as an implicit SECURITY MODE COMMAND message for the UE and the AMF in CONNECTED mode, and is used to derive and take into use a mapped 5G NAS security context for the purpose of NAS COU.</data>
+  <data key="keywords">Definition</data>
+  <data key="source_id">chunk-271beb7d1fe2c1b6d63a054506e7b878</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.3.1</data>
+  <data key="created_at">1770205875</data>
+  <data key="conditions">["CONNECTED mode"]</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="DEF" target="SECURITY MODE COMMAND message" id="e000010">
+  <data key="weight">1.0</data>
+  <data key="description">The SECURITY MODE COMMAND message is implicitly</data>
+  <data key="keywords">Definition</data>
+  <data key="source_id">chunk-271beb7d1fe2c1b6d63a054506e7b878</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.3.1</data>
+  <data key="created_at">1770205877</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="DEF" target="Replay protection" id="e000011">
+  <data key="weight">1.0</data>
+  <data key="description">Replay protection assures that one and the same NAS message is not accepted twice by the receiver. Specifically, for a given 5G NAS security context, a given NAS COUNT value shall be accepted at most one time and only if message integrity verifies correctly.</data>
+  <data key="keywords">Definition</data>
+  <data key="source_id">chunk-1b7f566ef414e18b1d67b12d8cedbf12</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.3.2</data>
+  <data key="created_at">1770205891</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="DEF" target="Integrity protection of NAS signall" id="e000012">
+  <data key="weight">1.0</data>
+  <data key="description">Integrity protection of NAS signall is applied to ensure the authenticity and integrity of NAS signaling messages, preventing unauthorized modification during transmission.</data>
+  <data key="keywords">Definition</data>
+  <data key="source_id">chunk-87c075f0cf0189cf4a39f81e2c8777f4</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.4</data>
+  <data key="created_at">1770205934</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="DEF" target="NAS COUNT wrap around" id="e000013">
+  <data key="weight">1.0</data>
+  <data key="description">If, when increasing the NAS COUNT as specified above, the AMF detects that either its downlink NAS COUNT or the UE's uplink NAS</data>
+  <data key="keywords">Definition</data>
+  <data key="source_id">chunk-7ddc7021e3bbd564e76be4d14fa69d8c</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.3.5</data>
+  <data key="created_at">1770205937</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="DEF" target="CIoT small data container IE" id="e000014">
+  <data key="weight">1.0</data>
+  <data key="description">The UE shall decipher the value part of the CIoT small data container IE and handle the message as specified in subclause 5.6.1.4.2.</data>
+  <data key="keywords">Definition</data>
+  <data key="source_id">chunk-2cf58586d0687b7b5ca57670c605e12e</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.6</data>
+  <data key="created_at">1770206049</data>
+  <data key="conditions">["subclause 5.6.1.4.2"]</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="DEF" target="initial NAS message" id="e000015">
+  <data key="weight">1.0</data>
+  <data key="description">The UE shall send an initial NAS message including cleart</data>
+  <data key="keywords">Definition</data>
+  <data key="source_id">chunk-2cf58586d0687b7b5ca57670c605e12e</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.6</data>
+  <data key="created_at">1770206049</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="SL Positioning Server UE" target="3GPP (NAUN3) device" id="e000040">
+  <data key="weight">1.0</data>
+  <data key="description">SL Positioning Server UE is defined in 3GPP TS 38.300 [27] and applies to the present document</data>
+  <data key="keywords">Condition</data>
+  <data key="source_id">chunk-49e52242a2012fd5ddb087404c976351</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md3.1</data>
+  <data key="created_at">1770205579</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="SL Positioning Server UE" target="REF" id="e000041">
+  <data key="weight">1.0</data>
+  <data key="description">3GPP TS 38.300 [27]</data>
+  <data key="keywords">Reference</data>
+  <data key="source_id">chunk-49e52242a2012fd5ddb087404c976351</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md3.1</data>
+  <data key="created_at">1770205573</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="SL Positioning Server UE" target="DEF" id="e000042">
+  <data key="weight">1.0</data>
+  <data key="description">SL Positioning Server UE is defined in 3GPP TS 38.300 [27] and applies to the present document</data>
+  <data key="keywords">Definition</data>
+  <data key="source_id">chunk-49e52242a2012fd5ddb087404c976351</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md3.1</data>
+  <data key="created_at">1770205574</data>
+  <data key="conditions">["3GPP (NAUN3) device"]</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="NCR-MT" target="3GPP (NAUN3) device" id="e000043">
+  <data key="weight">1.0</data>
+  <data key="description">NCR-MT is defined in 3GPP TS 24.572 [64] and applies to the present document</data>
+  <data key="keywords">Condition</data>
+  <data key="source_id">chunk-49e52242a2012fd5ddb087404c976351</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md3.1</data>
+  <data key="created_at">1770205581</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="NCR-MT" target="REF" id="e000044">
+  <data key="weight">1.0</data>
+  <data key="description">3GPP TS 24.572 [64])##</data>
+  <data key="keywords">Reference</data>
+  <data key="source_id">chunk-49e52242a2012fd5ddb087404c976351</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md3.1</data>
+  <data key="created_at">1770205575</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="NCR-MT" target="DEF" id="e000045">
+  <data key="weight">1.0</data>
+  <data key="description">NCR-MT is defined in 3GPP TS 24.572 [64] and applies to the present document</data>
+  <data key="keywords">Definition</data>
+  <data key="source_id">chunk-49e52242a2012fd5ddb087404c976351</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md3.1</data>
+  <data key="created_at">1770205576</data>
+  <data key="conditions">["3GPP (NAUN3) device"]</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="UE's usage setting" target="5GS" id="e000047">
+  <data key="weight">1.0</data>
+  <data key="description">The UE's usage setting is defined in 3GPP TS 24.301 [15] and applies to voice capable UEs in 5GS, indicating whether the UE prefers voice services over data services or vice versa</data>
+  <data key="keywords">Condition</data>
+  <data key="source_id">chunk-4ae2a4e75e3d537b881977cd5936a0a2</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.3.1</data>
+  <data key="created_at">1770205619</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="UE's usage setting" target="REF" id="e000048">
+  <data key="weight">1.0</data>
+  <data key="description">3GPP TS 24.301 [15]</data>
+  <data key="keywords">Reference</data>
+  <data key="source_id">chunk-4ae2a4e75e3d537b881977cd5936a0a2</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.3.1</data>
+  <data key="created_at">1770205604</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="UE's usage setting" target="DEF" id="e000049">
+  <data key="weight">1.0</data>
+  <data key="description">The UE's usage setting is defined in 3GPP TS 24.301 [15] and applies to voice capable UEs in 5GS, indicating whether the UE prefers voice services over data services or vice versa</data>
+  <data key="keywords">Definition</data>
+  <data key="source_id">chunk-4ae2a4e75e3d537b881977cd5936a0a2</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.3.1</data>
+  <data key="created_at">1770205605</data>
+  <data key="conditions">["voice capable UEs", "5GS"]</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="UE's usage setting" target="voice capable UEs" id="e000050">
+  <data key="weight">1.0</data>
+  <data key="description">The UE's usage setting is defined in 3GPP TS 24.301 [15] and applies to voice capable UEs in 5GS, indicating whether the UE prefers voice services over data services or vice versa</data>
+  <data key="keywords">Condition</data>
+  <data key="source_id">chunk-4ae2a4e75e3d537b881977cd5936a0a2</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.3.1</data>
+  <data key="created_at">1770205607</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="UE's usage setting" target="voice services" id="e000051">
+  <data key="weight">1.0</data>
+  <data key="description">Voice services include IMS voice</data>
+  <data key="keywords">Condition</data>
+  <data key="source_id">chunk-4ae2a4e75e3d537b881977cd5936a0a2</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.3.1</data>
+  <data key="created_at">1770205609</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="UE's usage setting" target="data services" id="e000052">
+  <data key="weight">1.0</data>
+  <data key="description">Data services include any kind of user data transfer without a voice media component</data>
+  <data key="keywords">Condition</data>
+  <data key="source_id">chunk-4ae2a4e75e3d537b881977cd5936a0a2</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.3.1</data>
+  <data key="created_at">1770205610</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="UE's usage setting" target="voice centric" id="e000053">
+  <data key="weight">1.0</data>
+  <data key="description">The UE's usage setting can be set to "voice centric"</data>
+  <data key="keywords">Condition</data>
+  <data key="source_id">chunk-4ae2a4e75e3d537b881977cd5936a0a2</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.3.1</data>
+  <data key="created_at">1770205612</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="UE's usage setting" target="data centric" id="e000054">
+  <data key="weight">1.0</data>
+  <data key="description">The UE's usage setting can be set to "data centric"</data>
+  <data key="keywords">Condition</data>
+  <data key="source_id">chunk-4ae2a4e75e3d537b881977cd5936a0a2</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.3.1</data>
+  <data key="created_at">1770205614</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="voice centric" target="UE's usage setting" id="e000056">
+  <data key="weight">1.0</data>
+  <data key="description">The UE's usage setting can be set to "voice centric"</data>
+  <data key="keywords">Condition</data>
+  <data key="source_id">chunk-4ae2a4e75e3d537b881977cd5936a0a2</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.3.1</data>
+  <data key="created_at">1770205612</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="voice centric" target="DEF" id="e000057">
+  <data key="weight">1.0</data>
+  <data key="description">The UE's usage setting can be set to "voice centric"</data>
+  <data key="keywords">Definition</data>
+  <data key="source_id">chunk-4ae2a4e75e3d537b881977cd5936a0a2</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.3.1</data>
+  <data key="created_at">1770205610</data>
+  <data key="conditions">["UE's usage setting"]</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="voice services" target="UE's usage setting" id="e000058">
+  <data key="weight">1.0</data>
+  <data key="description">Voice services include IMS voice</data>
+  <data key="keywords">Condition</data>
+  <data key="source_id">chunk-4ae2a4e75e3d537b881977cd5936a0a2</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.3.1</data>
+  <data key="created_at">1770205609</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="voice services" target="DEF" id="e000059">
+  <data key="weight">1.0</data>
+  <data key="description">Voice services include IMS voice</data>
+  <data key="keywords">Definition</data>
+  <data key="source_id">chunk-4ae2a4e75e3d537b881977cd5936a0a2</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.3.1</data>
+  <data key="created_at">1770205607</data>
+  <data key="conditions">["UE's usage setting"]</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="data services" target="UE's usage setting" id="e000060">
+  <data key="weight">1.0</data>
+  <data key="description">Data services include any kind of user data transfer without a voice media component</data>
+  <data key="keywords">Condition</data>
+  <data key="source_id">chunk-4ae2a4e75e3d537b881977cd5936a0a2</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.3.1</data>
+  <data key="created_at">1770205610</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="data services" target="DEF" id="e000061">
+  <data key="weight">1.0</data>
+  <data key="description">Data services include any kind of user data transfer without a voice media component</data>
+  <data key="keywords">Definition</data>
+  <data key="source_id">chunk-4ae2a4e75e3d537b881977cd5936a0a2</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.3.1</data>
+  <data key="created_at">1770205609</data>
+  <data key="conditions">["UE's usage setting"]</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="data centric" target="UE's usage setting" id="e000062">
+  <data key="weight">1.0</data>
+  <data key="description">The UE's usage setting can be set to "data centric"</data>
+  <data key="keywords">Condition</data>
+  <data key="source_id">chunk-4ae2a4e75e3d537b881977cd5936a0a2</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.3.1</data>
+  <data key="created_at">1770205614</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="data centric" target="DEF" id="e000063">
+  <data key="weight">1.0</data>
+  <data key="description">The UE's usage setting can be set to "data centric"</data>
+  <data key="keywords">Definition</data>
+  <data key="source_id">chunk-4ae2a4e75e3d537b881977cd5936a0a2</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.3.1</data>
+  <data key="created_at">1770205612</data>
+  <data key="conditions">["UE's usage setting"]</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="5G NAS security" target="DEF" id="e000065">
+  <data key="weight">1.0</data>
+  <data key="description">5G NAS security involves the handling of 5G-EA0 within the 5G Non-Access Stratum layer to provide authentication and key agreement between the UE and the network</data>
+  <data key="keywords">Definition</data>
+  <data key="source_id">chunk-c3766b0bd2da84eace3065f40f55863c</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.2</data>
+  <data key="created_at">1770205672</data>
+  <data key="conditions">["5G-EA0"]</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="5G NAS security" target="5G-EA0" id="e000066">
+  <data key="weight">1.0</data>
+  <data key="description">5G NAS security involves the handling of 5G-EA0 within the 5G Non-Access Stratum layer to provide authentication and key agreement between the UE and the network</data>
+  <data key="keywords">Condition</data>
+  <data key="source_id">chunk-c3766b0bd2da84eace3065f40f55863c</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.2</data>
+  <data key="created_at">1770205673</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="KAMF derivation" target="REF" id="e000073">
+  <data key="weight">1.0</data>
+  <data key="description">NOTE 2</data>
+  <data key="keywords">Reference</data>
+  <data key="source_id">chunk-7e397641e752f61c7495ea9622b8103c</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.2.3</data>
+  <data key="created_at">1770205814</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="KAMF derivation" target="DEF" id="e000074">
+  <data key="weight">1.0</data>
+  <data key="description">KAMF derivation is required to reset downlink NAS COUNT and uplink NAS COUNT to zero for non</data>
+  <data key="keywords">Definition</data>
+  <data key="source_id">chunk-7e397641e752f61c7495ea9622b8103c</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.2.3</data>
+  <data key="created_at">1770205815</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="S1 mode to N1 mode NAS transparent container" target="REF" id="e000078">
+  <data key="weight">1.0</data>
+  <data key="description">subclause 9.11.2.9</data>
+  <data key="keywords">Reference</data>
+  <data key="source_id">chunk-271beb7d1fe2c1b6d63a054506e7b878</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.3.1</data>
+  <data key="created_at">1770205873</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="S1 mode to N1 mode NAS transparent container" target="DEF" id="e000079">
+  <data key="weight">1.0</data>
+  <data key="description">The S1 mode to N1 mode NAS transparent container is treated as an implicit SECURITY MODE COMMAND message for the UE and the AMF in CONNECTED mode, and is used to derive and take into use a mapped 5G NAS security context for the purpose of NAS COU.</data>
+  <data key="keywords">Definition</data>
+  <data key="source_id">chunk-271beb7d1fe2c1b6d63a054506e7b878</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.3.1</data>
+  <data key="created_at">1770205875</data>
+  <data key="conditions">["CONNECTED mode"]</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="S1 mode to N1 mode NAS transparent container" target="CONNECTED mode" id="e000080">
+  <data key="weight">1.0</data>
+  <data key="description">The S1 mode to N1 mode NAS transparent container is treated as an implicit SECURITY MODE COMMAND message for the UE and the AMF in CONNECTED mode, and is used to derive and take into use a mapped 5G NAS security context for the purpose of NAS COU.</data>
+  <data key="keywords">Condition</data>
+  <data key="source_id">chunk-271beb7d1fe2c1b6d63a054506e7b878</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.3.1</data>
+  <data key="created_at">1770205876</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="SECURITY MODE COMMAND message" target="DEF" id="e000072">
+  <data key="weight">1.0</data>
+  <data key="description">The SECURITY MODE COMMAND message is implicitly</data>
+  <data key="keywords">Definition</data>
+  <data key="source_id">chunk-271beb7d1fe2c1b6d63a054506e7b878</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.3.1</data>
+  <data key="created_at">1770205877</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="Replay protection" target="DEF" id="e000081">
+  <data key="weight">1.0</data>
+  <data key="description">Replay protection assures that one and the same NAS message is not accepted twice by the receiver. Specifically, for a given 5G NAS security context, a given NAS COUNT value shall be accepted at most one time and only if message integrity verifies correctly.</data>
+  <data key="keywords">Definition</data>
+  <data key="source_id">chunk-1b7f566ef414e18b1d67b12d8cedbf12</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.3.2</data>
+  <data key="created_at">1770205891</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="Replay protection" target="5G NAS security context" id="e000082">
+  <data key="weight">1.0</data>
+  <data key="description">Replay protection is applied within the context of a 5G NAS security context to ensure that each NAS COUNT value is accepted at most once</data>
+  <data key="keywords">apply</data>
+  <data key="source_id">chunk-1b7f566ef414e18b1d67b12d8cedbf12</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.3.2</data>
+  <data key="created_at">1770205886</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="Replay protection" target="NAS COUNT value" id="e000083">
+  <data key="weight">1.0</data>
+  <data key="description">Replay protection validates that a given NAS COUNT value is accepted at most once</data>
+  <data key="keywords">validate</data>
+  <data key="source_id">chunk-1b7f566ef414e18b1d67b12d8cedbf12</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.3.2</data>
+  <data key="created_at">1770205888</data>
+  <data key="conditions">["5G NAS security context"]</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="Replay protection" target="message integrity" id="e000084">
+  <data key="weight">1.0</data>
+  <data key="description">Replay protection only accepts a NAS COUNT value if message integrity verifies correctly</data>
+  <data key="keywords">require</data>
+  <data key="source_id">chunk-1b7f566ef414e18b1d67b12d8cedbf12</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.3.2</data>
+  <data key="created_at">1770205889</data>
+  <data key="conditions">["5G NAS security context"]</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="Integrity protection of NAS signall" target="DEF" id="e000093">
+  <data key="weight">1.0</data>
+  <data key="description">Integrity protection of NAS signall is applied to ensure the authenticity and integrity of NAS signaling messages, preventing unauthorized modification during transmission.</data>
+  <data key="keywords">Definition</data>
+  <data key="source_id">chunk-87c075f0cf0189cf4a39f81e2c8777f4</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.4</data>
+  <data key="created_at">1770205934</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="Integrity protection of NAS signall" target="NAS signall" id="e000094">
+  <data key="weight">1.0</data>
+  <data key="description">Integrity protection of NAS signall protects NAS signall from unauthorized modification during transmission</data>
+  <data key="keywords">protect</data>
+  <data key="source_id">chunk-87c075f0cf0189cf4a39f81e2c8777f4</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.4</data>
+  <data key="created_at">1770205927</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="Integrity protection of NAS signall" target="User Equipment" id="e000095">
+  <data key="weight">1.0</data>
+  <data key="description">Integrity protection of NAS signall is applied by User Equipment in the context of NAS signaling</data>
+  <data key="keywords">apply</data>
+  <data key="source_id">chunk-87c075f0cf0189cf4a39f81e2c8777f4</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.4</data>
+  <data key="created_at">1770205930</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="Integrity protection of NAS signall" target="core network" id="e000096">
+  <data key="weight">1.0</data>
+  <data key="description">Integrity protection of NAS signall is applied by the core network in the context of NAS signaling</data>
+  <data key="keywords">apply</data>
+  <data key="source_id">chunk-87c075f0cf0189cf4a39f81e2c8777f4</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.4</data>
+  <data key="created_at">1770205932</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="NAS COUNT wrap around" target="REF" id="e000091">
+  <data key="weight">1.0</data>
+  <data key="description">4.4.3.5</data>
+  <data key="keywords">Reference</data>
+  <data key="source_id">chunk-7ddc7021e3bbd564e76be4d14fa69d8c</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.3.5</data>
+  <data key="created_at">1770205934</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="NAS COUNT wrap around" target="DEF" id="e000092">
+  <data key="weight">1.0</data>
+  <data key="description">If, when increasing the NAS COUNT as specified above, the AMF detects that either its downlink NAS COUNT or the UE's uplink NAS</data>
+  <data key="keywords">Definition</data>
+  <data key="source_id">chunk-7ddc7021e3bbd564e76be4d14fa69d8c</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.3.5</data>
+  <data key="created_at">1770205937</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="CIoT small data container IE" target="REF" id="e000099">
+  <data key="weight">1.0</data>
+  <data key="description">subclause 5.6.1.4.2</data>
+  <data key="keywords">Reference</data>
+  <data key="source_id">chunk-2cf58586d0687b7b5ca57670c605e12e</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.6</data>
+  <data key="created_at">1770206049</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="CIoT small data container IE" target="DEF" id="e000100">
+  <data key="weight">1.0</data>
+  <data key="description">The UE shall decipher the value part of the CIoT small data container IE and handle the message as specified in subclause 5.6.1.4.2.</data>
+  <data key="keywords">Definition</data>
+  <data key="source_id">chunk-2cf58586d0687b7b5ca57670c605e12e</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.6</data>
+  <data key="created_at">1770206049</data>
+  <data key="conditions">["subclause 5.6.1.4.2"]</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="CIoT small data container IE" target="subclause 5.6.1.4.2" id="e000101">
+  <data key="weight">1.0</data>
+  <data key="description">The UE shall decipher the value part of the CIoT small data container IE and handle the message as specified in subclause 5.6.1.4.2.</data>
+  <data key="keywords">Condition</data>
+  <data key="source_id">chunk-2cf58586d0687b7b5ca57670c605e12e</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.6</data>
+  <data key="created_at">1770206049</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="initial NAS message" target="DEF" id="e000076">
+  <data key="weight">1.0</data>
+  <data key="description">The UE shall send an initial NAS message including cleart</data>
+  <data key="keywords">Definition</data>
+  <data key="source_id">chunk-2cf58586d0687b7b5ca57670c605e12e</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.6</data>
+  <data key="created_at">1770206049</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="REF" target="3GPP (NAUN3) device" id="e000016">
+  <data key="weight">1.0</data>
+  <data key="description">3GPP TS 23.586 [63]</data>
+  <data key="keywords">Reference</data>
+  <data key="source_id">chunk-49e52242a2012fd5ddb087404c976351</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md3.1</data>
+  <data key="created_at">1770205576</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="REF" target="SL Positioning Server UE" id="e000017">
+  <data key="weight">1.0</data>
+  <data key="description">3GPP TS 38.300 [27]</data>
+  <data key="keywords">Reference</data>
+  <data key="source_id">chunk-49e52242a2012fd5ddb087404c976351</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md3.1</data>
+  <data key="created_at">1770205573</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="REF" target="NCR-MT" id="e000018">
+  <data key="weight">1.0</data>
+  <data key="description">3GPP TS 24.572 [64])##</data>
+  <data key="keywords">Reference</data>
+  <data key="source_id">chunk-49e52242a2012fd5ddb087404c976351</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md3.1</data>
+  <data key="created_at">1770205575</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="REF" target="UE doma" id="e000019">
+  <data key="weight">1.0</data>
+  <data key="description">4.3)##</data>
+  <data key="keywords">Reference</data>
+  <data key="source_id">chunk-65f11384ffa18378873be8ecc33afe17</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.3</data>
+  <data key="created_at">1770205552</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="REF" target="UE's usage setting" id="e000020">
+  <data key="weight">1.0</data>
+  <data key="description">3GPP TS 24.301 [15]</data>
+  <data key="keywords">Reference</data>
+  <data key="source_id">chunk-4ae2a4e75e3d537b881977cd5936a0a2</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.3.1</data>
+  <data key="created_at">1770205604</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="REF" target="5G NAS security context" id="e000021">
+  <data key="weight">1.0</data>
+  <data key="description">annex C</data>
+  <data key="keywords">Reference</data>
+  <data key="source_id">chunk-daecd9cfa64de8bf371ec61f98e7f366</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.2.1.3</data>
+  <data key="created_at">1770205743</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="REF" target="5G NAS security context" id="e000022">
+  <data key="weight">2.0</data>
+  <data key="description">annex C</data>
+  <data key="keywords">Reference</data>
+  <data key="source_id">chunk-daecd9cfa64de8bf371ec61f98e7f366</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.2.1.3</data>
+  <data key="created_at">1770205875</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="REF" target="Handling of NAS COUNT and NAS seq" id="e000023">
+  <data key="weight">1.0</data>
+  <data key="description">4.4.3)##</data>
+  <data key="keywords">Reference</data>
+  <data key="source_id">chunk-973353cfa5a5c8d6170250b347352435</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.3</data>
+  <data key="created_at">1770205787</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="REF" target="KAMF derivation" id="e000024">
+  <data key="weight">1.0</data>
+  <data key="description">NOTE 2</data>
+  <data key="keywords">Reference</data>
+  <data key="source_id">chunk-7e397641e752f61c7495ea9622b8103c</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.2.3</data>
+  <data key="created_at">1770205814</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="REF" target="S1 mode to N1 mode NAS transparent container" id="e000025">
+  <data key="weight">1.0</data>
+  <data key="description">subclause 9.11.2.9</data>
+  <data key="keywords">Reference</data>
+  <data key="source_id">chunk-271beb7d1fe2c1b6d63a054506e7b878</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.3.1</data>
+  <data key="created_at">1770205873</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="REF" target="Integrity protection and verification" id="e000026">
+  <data key="weight">1.0</data>
+  <data key="description">3GPP TS 33.501 [24]</data>
+  <data key="keywords">Reference</data>
+  <data key="source_id">chunk-728e27595f36b4b4291b79a1843b7f25</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.3.3</data>
+  <data key="created_at">1770205894</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="REF" target="SECURITY PROTECTED 5GS NAS MESSAGE message" id="e000027">
+  <data key="weight">1.0</data>
+  <data key="description">3G</data>
+  <data key="keywords">Reference</data>
+  <data key="source_id">chunk-728e27595f36b4b4291b79a1843b7f25</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.3.3</data>
+  <data key="created_at">1770205898</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="REF" target="NAS COUNT wrap around" id="e000028">
+  <data key="weight">1.0</data>
+  <data key="description">4.4.3.5</data>
+  <data key="keywords">Reference</data>
+  <data key="source_id">chunk-7ddc7021e3bbd564e76be4d14fa69d8c</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.3.5</data>
+  <data key="created_at">1770205934</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="REF" target="CIoT small data container IE" id="e000029">
+  <data key="weight">1.0</data>
+  <data key="description">subclause 5.6.1.4.2</data>
+  <data key="keywords">Reference</data>
+  <data key="source_id">chunk-2cf58586d0687b7b5ca57670c605e12e</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.6</data>
+  <data key="created_at">1770206049</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="REF" target="B-N1 mode" id="e000030">
+  <data key="weight">1.0</data>
+  <data key="description">4.6 Net)##</data>
+  <data key="keywords">Reference</data>
+  <data key="source_id">chunk-e205dce748bba0238507c0e1f1136235</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.6</data>
+  <data key="created_at">1770206170</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="REF" target="Mobility manage" id="e000031">
+  <data key="weight">1.0</data>
+  <data key="description">4.6.2)##</data>
+  <data key="keywords">Reference</data>
+  <data key="source_id">chunk-16b99f2ac364fde951916508883f20b6</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.6.2</data>
+  <data key="created_at">1770206173</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="3GPP (NAUN3) device" target="REF" id="e000037">
+  <data key="weight">1.0</data>
+  <data key="description">3GPP TS 23.586 [63]</data>
+  <data key="keywords">Reference</data>
+  <data key="source_id">chunk-49e52242a2012fd5ddb087404c976351</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md3.1</data>
+  <data key="created_at">1770205576</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="3GPP (NAUN3) device" target="SL Positioning Server UE" id="e000038">
+  <data key="weight">1.0</data>
+  <data key="description">SL Positioning Server UE is defined in 3GPP TS 38.300 [27] and applies to the present document</data>
+  <data key="keywords">Condition</data>
+  <data key="source_id">chunk-49e52242a2012fd5ddb087404c976351</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md3.1</data>
+  <data key="created_at">1770205579</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="3GPP (NAUN3) device" target="NCR-MT" id="e000039">
+  <data key="weight">1.0</data>
+  <data key="description">NCR-MT is defined in 3GPP TS 24.572 [64] and applies to the present document</data>
+  <data key="keywords">Condition</data>
+  <data key="source_id">chunk-49e52242a2012fd5ddb087404c976351</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md3.1</data>
+  <data key="created_at">1770205581</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="UE doma" target="REF" id="e000046">
+  <data key="weight">1.0</data>
+  <data key="description">4.3)##</data>
+  <data key="keywords">Reference</data>
+  <data key="source_id">chunk-65f11384ffa18378873be8ecc33afe17</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.3</data>
+  <data key="created_at">1770205552</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="5G NAS security context" target="REF" id="e000067">
+  <data key="weight">1.0</data>
+  <data key="description">annex C</data>
+  <data key="keywords">Reference</data>
+  <data key="source_id">chunk-daecd9cfa64de8bf371ec61f98e7f366</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.2.1.3</data>
+  <data key="created_at">1770205743</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="5G NAS security context" target="REF" id="e000068">
+  <data key="weight">2.0</data>
+  <data key="description">annex C</data>
+  <data key="keywords">Reference</data>
+  <data key="source_id">chunk-daecd9cfa64de8bf371ec61f98e7f366</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.2.1.3</data>
+  <data key="created_at">1770205875</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="5G NAS security context" target="Replay protection" id="e000069">
+  <data key="weight">1.0</data>
+  <data key="description">Replay protection is applied within the context of a 5G NAS security context to ensure that each NAS COUNT value is accepted at most once</data>
+  <data key="keywords">apply</data>
+  <data key="source_id">chunk-1b7f566ef414e18b1d67b12d8cedbf12</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.3.2</data>
+  <data key="created_at">1770205886</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="5G NAS security context" target="NAS COUNT value" id="e000070">
+  <data key="weight">1.0</data>
+  <data key="description">Replay protection validates that a given NAS COUNT value is accepted at most once</data>
+  <data key="keywords">Condition</data>
+  <data key="source_id">chunk-1b7f566ef414e18b1d67b12d8cedbf12</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.3.2</data>
+  <data key="created_at">1770205890</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="5G NAS security context" target="message integrity" id="e000071">
+  <data key="weight">1.0</data>
+  <data key="description">Replay protection only accepts a NAS COUNT value if message integrity verifies correctly</data>
+  <data key="keywords">Condition</data>
+  <data key="source_id">chunk-1b7f566ef414e18b1d67b12d8cedbf12</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.3.2</data>
+  <data key="created_at">1770205892</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="Handling of NAS COUNT and NAS seq" target="REF" id="e000075">
+  <data key="weight">1.0</data>
+  <data key="description">4.4.3)##</data>
+  <data key="keywords">Reference</data>
+  <data key="source_id">chunk-973353cfa5a5c8d6170250b347352435</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.3</data>
+  <data key="created_at">1770205787</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="Integrity protection and verification" target="REF" id="e000087">
+  <data key="weight">1.0</data>
+  <data key="description">3GPP TS 33.501 [24]</data>
+  <data key="keywords">Reference</data>
+  <data key="source_id">chunk-728e27595f36b4b4291b79a1843b7f25</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.3.3</data>
+  <data key="created_at">1770205894</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="SECURITY PROTECTED 5GS NAS MESSAGE message" target="REF" id="e000088">
+  <data key="weight">1.0</data>
+  <data key="description">3G</data>
+  <data key="keywords">Reference</data>
+  <data key="source_id">chunk-728e27595f36b4b4291b79a1843b7f25</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.3.3</data>
+  <data key="created_at">1770205898</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="B-N1 mode" target="REF" id="e000104">
+  <data key="weight">1.0</data>
+  <data key="description">4.6 Net)##</data>
+  <data key="keywords">Reference</data>
+  <data key="source_id">chunk-e205dce748bba0238507c0e1f1136235</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.6</data>
+  <data key="created_at">1770206170</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="Mobility manage" target="REF" id="e000105">
+  <data key="weight">1.0</data>
+  <data key="description">4.6.2)##</data>
+  <data key="keywords">Reference</data>
+  <data key="source_id">chunk-16b99f2ac364fde951916508883f20b6</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.6.2</data>
+  <data key="created_at">1770206173</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="UE" target="Access control" id="e000032">
+  <data key="weight">1.0</data>
+  <data key="description">Access control governs the ability of the UE to access network resources, ensuring only authorized access is permitted.)##</data>
+  <data key="keywords">govern</data>
+  <data key="source_id">chunk-5ae68e0b66f921b4da6680f802fd62c7</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.5.4</data>
+  <data key="created_at">1770206146</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="Access control" target="UE" id="e000103">
+  <data key="weight">1.0</data>
+  <data key="description">Access control governs the ability of the UE to access network resources, ensuring only authorized access is permitted.)##</data>
+  <data key="keywords">govern</data>
+  <data key="source_id">chunk-5ae68e0b66f921b4da6680f802fd62c7</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.5.4</data>
+  <data key="created_at">1770206146</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="5GS" target="UE's usage setting" id="e000033">
+  <data key="weight">1.0</data>
+  <data key="description">The UE's usage setting is defined in 3GPP TS 24.301 [15] and applies to voice capable UEs in 5GS, indicating whether the UE prefers voice services over data services or vice versa</data>
+  <data key="keywords">Condition</data>
+  <data key="source_id">chunk-4ae2a4e75e3d537b881977cd5936a0a2</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.3.1</data>
+  <data key="created_at">1770205619</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="core network" target="Integrity protection of NAS signall" id="e000034">
+  <data key="weight">1.0</data>
+  <data key="description">Integrity protection of NAS signall is applied by the core network in the context of NAS signaling</data>
+  <data key="keywords">apply</data>
+  <data key="source_id">chunk-87c075f0cf0189cf4a39f81e2c8777f4</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.4</data>
+  <data key="created_at">1770205932</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="User Equipment" target="Integrity protection of NAS signall" id="e000035">
+  <data key="weight">1.0</data>
+  <data key="description">Integrity protection of NAS signall is applied by User Equipment in the context of NAS signaling</data>
+  <data key="keywords">apply</data>
+  <data key="source_id">chunk-87c075f0cf0189cf4a39f81e2c8777f4</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.4</data>
+  <data key="created_at">1770205930</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="User Equipment" target="NAS signall" id="e000036">
+  <data key="weight">1.0</data>
+  <data key="description">User Equipment transmits NAS signall to the core</data>
+  <data key="keywords">transmit</data>
+  <data key="source_id">chunk-87c075f0cf0189cf4a39f81e2c8777f4</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.4</data>
+  <data key="created_at">1770205928</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="NAS signall" target="Integrity protection of NAS signall" id="e000097">
+  <data key="weight">1.0</data>
+  <data key="description">Integrity protection of NAS signall protects NAS signall from unauthorized modification during transmission</data>
+  <data key="keywords">protect</data>
+  <data key="source_id">chunk-87c075f0cf0189cf4a39f81e2c8777f4</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.4</data>
+  <data key="created_at">1770205927</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="NAS signall" target="User Equipment" id="e000098">
+  <data key="weight">1.0</data>
+  <data key="description">User Equipment transmits NAS signall to the core</data>
+  <data key="keywords">transmit</data>
+  <data key="source_id">chunk-87c075f0cf0189cf4a39f81e2c8777f4</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.4</data>
+  <data key="created_at">1770205928</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="voice capable UEs" target="UE's usage setting" id="e000055">
+  <data key="weight">1.0</data>
+  <data key="description">The UE's usage setting is defined in 3GPP TS 24.301 [15] and applies to voice capable UEs in 5GS, indicating whether the UE prefers voice services over data services or vice versa</data>
+  <data key="keywords">Condition</data>
+  <data key="source_id">chunk-4ae2a4e75e3d537b881977cd5936a0a2</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.3.1</data>
+  <data key="created_at">1770205607</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="5G-EA0" target="5G NAS security" id="e000064">
+  <data key="weight">1.0</data>
+  <data key="description">5G NAS security involves the handling of 5G-EA0 within the 5G Non-Access Stratum layer to provide authentication and key agreement between the UE and the network</data>
+  <data key="keywords">Condition</data>
+  <data key="source_id">chunk-c3766b0bd2da84eace3065f40f55863c</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.2</data>
+  <data key="created_at">1770205673</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="NAS COUNT value" target="5G NAS security context" id="e000085">
+  <data key="weight">1.0</data>
+  <data key="description">Replay protection validates that a given NAS COUNT value is accepted at most once</data>
+  <data key="keywords">Condition</data>
+  <data key="source_id">chunk-1b7f566ef414e18b1d67b12d8cedbf12</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.3.2</data>
+  <data key="created_at">1770205890</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="NAS COUNT value" target="Replay protection" id="e000086">
+  <data key="weight">1.0</data>
+  <data key="description">Replay protection validates that a given NAS COUNT value is accepted at most once</data>
+  <data key="keywords">validate</data>
+  <data key="source_id">chunk-1b7f566ef414e18b1d67b12d8cedbf12</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.3.2</data>
+  <data key="created_at">1770205888</data>
+  <data key="conditions">["5G NAS security context"]</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="message integrity" target="5G NAS security context" id="e000089">
+  <data key="weight">1.0</data>
+  <data key="description">Replay protection only accepts a NAS COUNT value if message integrity verifies correctly</data>
+  <data key="keywords">Condition</data>
+  <data key="source_id">chunk-1b7f566ef414e18b1d67b12d8cedbf12</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.3.2</data>
+  <data key="created_at">1770205892</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="message integrity" target="Replay protection" id="e000090">
+  <data key="weight">1.0</data>
+  <data key="description">Replay protection only accepts a NAS COUNT value if message integrity verifies correctly</data>
+  <data key="keywords">require</data>
+  <data key="source_id">chunk-1b7f566ef414e18b1d67b12d8cedbf12</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.3.2</data>
+  <data key="created_at">1770205889</data>
+  <data key="conditions">["5G NAS security context"]</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="CONNECTED mode" target="S1 mode to N1 mode NAS transparent container" id="e000077">
+  <data key="weight">1.0</data>
+  <data key="description">The S1 mode to N1 mode NAS transparent container is treated as an implicit SECURITY MODE COMMAND message for the UE and the AMF in CONNECTED mode, and is used to derive and take into use a mapped 5G NAS security context for the purpose of NAS COU.</data>
+  <data key="keywords">Condition</data>
+  <data key="source_id">chunk-271beb7d1fe2c1b6d63a054506e7b878</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.3.1</data>
+  <data key="created_at">1770205876</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+<edge source="subclause 5.6.1.4.2" target="CIoT small data container IE" id="e000102">
+  <data key="weight">1.0</data>
+  <data key="description">The UE shall decipher the value part of the CIoT small data container IE and handle the message as specified in subclause 5.6.1.4.2.</data>
+  <data key="keywords">Condition</data>
+  <data key="source_id">chunk-2cf58586d0687b7b5ca57670c605e12e</data>
+  <data key="file_path">../3GPP-trunked/Rel-19/24_series/24501-j20.md4.4.6</data>
+  <data key="created_at">1770206049</data>
+  <data key="source_file">Rel-19/24_series/24501-j20/graph_chunk_entity_relation.graphml</data>
+  <data key="release">Rel-19</data>
+</edge>
+</graph></graphml>

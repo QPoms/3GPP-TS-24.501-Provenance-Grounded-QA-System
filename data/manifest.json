@@ -42,6 +42,48 @@
       "spec_id": null,
       "release": "Rel-19",
       "version": null
+    },
+    {
+      "artifact_id": "ts24501-document-built-working-subgraph",
+      "kind": "generated-knowledge-graph",
+      "source_url": "https://www.3gpp.org/ftp/Specs/archive/24_series/24.501/24501-j20.zip",
+      "local_path": "data/processed/graph/ts24501_working_subgraph.graphml",
+      "sha256": "b8f824611c0aedf00ddf34f845c3bd6dd52c3343e22ff8741f67902dcf4bb6e1",
+      "retrieved_at": null,
+      "publisher": "Project-generated",
+      "license": "Derived artifact; source specification remains subject to official 3GPP legal and copyright terms",
+      "spec_id": "3GPP TS 24.501",
+      "release": "Rel-19",
+      "version": "19.2.0",
+      "derived_from": "3gpp-ts-24501-v19.2.0-docx"
+    },
+    {
+      "artifact_id": "ts24501-lexical-alignments",
+      "kind": "generated-alignment-candidates",
+      "source_url": null,
+      "local_path": "data/processed/alignments/ts24501_lexical.jsonl",
+      "sha256": "db73ffb5a7c7159e378e33a795be5aef31e1e030aace9e77570fcf35f4e1f7c7",
+      "retrieved_at": null,
+      "publisher": "Project-generated",
+      "license": "Derived artifact; source specification remains subject to official 3GPP legal and copyright terms",
+      "spec_id": "3GPP TS 24.501",
+      "release": "Rel-19",
+      "version": "19.2.0",
+      "derived_from": "3gpp-ts-24501-v19.2.0-docx"
+    },
+    {
+      "artifact_id": "rel19-24501-subgraph-gephi-lite",
+      "kind": "curated-upstream-subgraph-snapshot",
+      "source_url": "https://huggingface.co/datasets/GSMA/telecom-kg-rel19",
+      "local_path": "data/tkg/rel19_24501_subgraph_gephi_lite.graphml",
+      "sha256": "fb48f94a1d09e02fef8a7f8e7ff2691672b59e0e8c3265f2a4203908b0727a0c",
+      "retrieved_at": null,
+      "publisher": "GSMA / KU-DF",
+      "license": "See the upstream dataset card",
+      "spec_id": "3GPP TS 24.501",
+      "release": "Rel-19",
+      "version": null,
+      "derived_from": "gsma-ku-df-rel19-telecom-kg"
     }
   ]
 }

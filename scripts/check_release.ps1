@@ -12,8 +12,17 @@ $requiredIgnored = @(
     "data/external/specifications/24501-j20.zip",
     "data/external/specifications/24501-j20/24501-j20.docx",
     "data/processed/chunks/ts24501_v19_2_0.jsonl",
+    "data/tkg/rel19_3gpp_telecom_kg.graphml",
+    "data/tkg/rel19_3gpp_telecom_kg_gephi_lite.graphml",
+    "data/tkg/rel19_full_visual_positioned_all_nodes.gexf",
+    "data/chunks/rel19_text_chunks.jsonl",
+    "data/mappings/entities.json"
+)
+
+$allowedDataArtifacts = @(
+    "data/processed/alignments/ts24501_lexical.jsonl",
     "data/processed/graph/ts24501_working_subgraph.graphml",
-    "data/tkg/rel19_3gpp_telecom_kg.graphml"
+    "data/tkg/rel19_24501_subgraph_gephi_lite.graphml"
 )
 
 foreach ($path in $requiredIgnored) {
@@ -27,7 +36,10 @@ foreach ($path in $requiredIgnored) {
 
 $candidates = git ls-files --cached --others --exclude-standard |
     Where-Object {
-        $_ -notmatch '^(data/external|data/processed|data/indexes|data/tkg|data/chunks|data/mappings|reports/generated)/' -and
+        (
+            $_ -notmatch '^(data/external|data/processed|data/indexes|data/tkg|data/chunks|data/mappings|reports/generated)/' -or
+            $allowedDataArtifacts -contains $_
+        ) -and
         $_ -notmatch '^\.git/' -and
         $_ -notmatch '^\.venv/'
     }

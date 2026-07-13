@@ -48,3 +48,19 @@ until local commands create files inside them. This is intentional: large downlo
 specifications, generated graph artifacts, indexes, and benchmark outputs stay local by
 default and should be regenerated from the documented pipeline rather than stored in the
 repository.
+
+## Repository-published artifacts
+
+The repository intentionally includes a small set of data artifacts that make the project
+inspectable without redistributing the full source corpus:
+
+- `data/processed/graph/ts24501_working_subgraph.graphml` — the document-built TS 24.501
+  working graph used by the provenance-grounded QA path.
+- `data/processed/alignments/ts24501_lexical.jsonl` — lexical alignment candidates between
+  TS 24.501 chunks and graph items.
+- `data/tkg/rel19_24501_subgraph_gephi_lite.graphml` — a compact 24.501-oriented graph
+  snapshot derived from the upstream Release 19 telecom KG for inspection.
+
+The full 3GPP document archive, parsed full-text chunks, Hugging Face cache files, large
+upstream graph files, vector/BM25 indexes, and generated benchmark reports remain ignored
+by default.

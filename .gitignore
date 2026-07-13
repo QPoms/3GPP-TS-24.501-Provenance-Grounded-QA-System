@@ -17,9 +17,16 @@ data/external/specifications/*
 data/processed/*
 data/indexes/*
 data/.gitattributes
-data/tkg/
+data/tkg/*
 data/chunks/
 data/mappings/
+!data/processed/
+!data/processed/alignments/
+!data/processed/alignments/ts24501_lexical.jsonl
+!data/processed/graph/
+!data/processed/graph/ts24501_working_subgraph.graphml
+!data/tkg/
+!data/tkg/rel19_24501_subgraph_gephi_lite.graphml
 
 # Local reports and application state
 reports/generated/*
