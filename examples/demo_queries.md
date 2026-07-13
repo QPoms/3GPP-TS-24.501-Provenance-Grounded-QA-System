@@ -3,7 +3,7 @@
 Use these prompts to show the project on a GitHub profile, in a short screen recording, or
 in a competition submission.
 
-## Agent questions
+## QA questions
 
 ```powershell
 .\.venv\Scripts\kg-agent.exe ask "How is replay protection handled for NAS signalling?"

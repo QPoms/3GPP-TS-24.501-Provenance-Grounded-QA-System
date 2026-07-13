@@ -46,8 +46,8 @@ The endpoint should implement the OpenAI Responses API, including:
 
 Some compatible endpoints can create tool calls but fail on `previous_response_id`
 continuation. The runtime includes a narrow fallback for the provider error that says a
-requested item was created under a different Azure OpenAI resource. In that case, the Agent
-retries the tool-output step without `previous_response_id` and sends only minimal
+requested item was created under a different Azure OpenAI resource. In that case, the QA
+runtime retries the tool-output step without `previous_response_id` and sends only minimal
 function-call metadata.
 
 An endpoint that implements only `/v1/chat/completions` is still not sufficient for the
@@ -58,9 +58,9 @@ local tools.
 
 - Missing keys or model names fail before an API request is made.
 - Tool calls are capped at six by default.
-- Graph hops are capped at three in the Agent tool schema.
+- Graph hops are capped at three in the QA runtime tool schema.
 - The model has no shell or filesystem tool.
 - Specification excerpts and graph results are bounded.
 - A `chunk_id` in the final answer is rejected if that ID was not returned by a tool during the
-  current Agent run.
+  current QA run.
 - Tool traces show names and arguments, not private chain-of-thought.

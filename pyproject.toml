@@ -3,14 +3,14 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "telecom-graph-agent"
+name = "ts24501-provenance-qa"
 version = "0.1.0"
-description = "Evidence-grounded GraphRAG agent for 3GPP TS 24.501"
+description = "Provenance-grounded QA system for 3GPP TS 24.501"
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }
 authors = [{ name = "Project contributors" }]
-keywords = ["3gpp", "telecom", "graphrag", "rag", "knowledge-graph", "openai"]
+keywords = ["3gpp", "telecom", "rag", "knowledge-graph", "provenance", "openai"]
 classifiers = [
   "Development Status :: 3 - Alpha",
   "Intended Audience :: Developers",

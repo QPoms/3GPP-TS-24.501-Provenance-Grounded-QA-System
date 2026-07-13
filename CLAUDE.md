@@ -2,7 +2,7 @@
 
 ## Project scope
 
-This repository implements an evidence-grounded GraphRAG agent for 3GPP TS 24.501.
+This repository implements a provenance-grounded QA system for 3GPP TS 24.501.
 Do not expand the implementation to other specifications until the TS 24.501 pipeline is
 working and evaluated end to end.
 
@@ -32,7 +32,7 @@ working and evaluated end to end.
 
 - Python 3.11+ is the supported runtime.
 - Keep domain models independent from storage and API adapters.
-- Bound graph depth, result count, and agent tool-call count.
+- Bound graph depth, result count, and QA runtime tool-call count.
 - Add tests for parsing, filtering, citations, and failure cases.
 - Prefer deterministic local processing before adding model calls.
 
@@ -52,4 +52,3 @@ uv run ruff check .
 uv run pyright
 uv run pytest
 ```
-

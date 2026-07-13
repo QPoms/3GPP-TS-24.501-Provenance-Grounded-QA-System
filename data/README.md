@@ -36,16 +36,16 @@ their source URL, retrieval date, SHA-256 checksum, version, and local relative 
 data/
 |-- external/
 |   `-- specifications/  # downloaded source documents; ignored by Git
-|-- processed/           # parsed chunks and alignments; ignored by Git
+|-- processed/           # generated chunks, alignments, and graph artifacts
 |-- indexes/             # BM25/vector indexes; ignored by Git
-|-- tkg/                 # upstream graph files; ignored by Git
+|-- tkg/                 # upstream graph files and compact inspection snapshots
 |-- mappings/            # upstream entity mappings; ignored by Git
 `-- chunks/              # upstream chunk metadata with empty text values; ignored by Git
 ```
 
-Git does not track empty directories, so generated-data folders may not appear on GitHub
-until local commands create files inside them. This is intentional: large downloaded
-specifications, generated graph artifacts, indexes, and benchmark outputs stay local by
+Git does not track empty directories, so ignored generated-data folders may not appear on
+GitHub until local commands create files inside them. This is intentional: large downloaded
+specifications, full-text generated chunks, indexes, and benchmark outputs stay local by
 default and should be regenerated from the documented pipeline rather than stored in the
 repository.
 
@@ -54,11 +54,11 @@ repository.
 The repository intentionally includes a small set of data artifacts that make the project
 inspectable without redistributing the full source corpus:
 
-- `data/processed/graph/ts24501_working_subgraph.graphml` — the document-built TS 24.501
+- `data/processed/graph/ts24501_working_subgraph.graphml` - the document-built TS 24.501
   working graph used by the provenance-grounded QA path.
-- `data/processed/alignments/ts24501_lexical.jsonl` — lexical alignment candidates between
+- `data/processed/alignments/ts24501_lexical.jsonl` - lexical alignment candidates between
   TS 24.501 chunks and graph items.
-- `data/tkg/rel19_24501_subgraph_gephi_lite.graphml` — a compact 24.501-oriented graph
+- `data/tkg/rel19_24501_subgraph_gephi_lite.graphml` - a compact 24.501-oriented graph
   snapshot derived from the upstream Release 19 telecom KG for inspection.
 
 The full 3GPP document archive, parsed full-text chunks, Hugging Face cache files, large
