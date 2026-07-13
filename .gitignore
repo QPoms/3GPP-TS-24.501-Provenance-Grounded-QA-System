@@ -20,13 +20,9 @@ data/.gitattributes
 data/tkg/
 data/chunks/
 data/mappings/
-!data/external/specifications/.gitkeep
-!data/processed/.gitkeep
-!data/indexes/.gitkeep
 
 # Local reports and application state
 reports/generated/*
-!reports/generated/.gitkeep
 .streamlit/secrets.toml
 docs/superpowers/
 

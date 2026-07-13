@@ -34,12 +34,17 @@ their source URL, retrieval date, SHA-256 checksum, version, and local relative 
 
 ```text
 data/
-├── external/
-│   └── specifications/  # downloaded source documents; ignored by Git
-├── processed/           # parsed chunks and alignments; ignored by Git
-├── indexes/             # BM25/vector indexes; ignored by Git
-├── tkg/                 # upstream graph files
-├── mappings/            # upstream entity mappings
-└── chunks/              # upstream chunk metadata with empty text values
+|-- external/
+|   `-- specifications/  # downloaded source documents; ignored by Git
+|-- processed/           # parsed chunks and alignments; ignored by Git
+|-- indexes/             # BM25/vector indexes; ignored by Git
+|-- tkg/                 # upstream graph files; ignored by Git
+|-- mappings/            # upstream entity mappings; ignored by Git
+`-- chunks/              # upstream chunk metadata with empty text values; ignored by Git
 ```
 
+Git does not track empty directories, so generated-data folders may not appear on GitHub
+until local commands create files inside them. This is intentional: large downloaded
+specifications, generated graph artifacts, indexes, and benchmark outputs stay local by
+default and should be regenerated from the documented pipeline rather than stored in the
+repository.
