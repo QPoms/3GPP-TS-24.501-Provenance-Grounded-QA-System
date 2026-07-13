@@ -29,7 +29,10 @@ DEFAULT_ALIGNMENTS = Path("data/processed/alignments/ts24501_lexical.jsonl")
 
 
 def build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(prog="kg-agent", description="3GPP TS 24.501 GraphRAG tools")
+    parser = argparse.ArgumentParser(
+        prog="kg-agent",
+        description="3GPP TS 24.501 provenance-grounded QA tools",
+    )
     subparsers = parser.add_subparsers(dest="command", required=True)
 
     audit = subparsers.add_parser("audit-graph", help="Audit GraphML structure and TS 24.501 coverage")
@@ -131,7 +134,7 @@ def build_parser() -> argparse.ArgumentParser:
     hybrid.add_argument("--candidate-k", type=int, default=20)
     hybrid.add_argument("--max-text-chars", type=int, default=700)
 
-    ask = subparsers.add_parser("ask", help="Ask the evidence-grounded GPT agent")
+    ask = subparsers.add_parser("ask", help="Ask the provenance-grounded QA runtime")
     ask.add_argument("question")
     ask.add_argument("--graph", type=Path, default=DEFAULT_WORKING_GRAPH)
     ask.add_argument("--chunks", type=Path, default=DEFAULT_CHUNKS)

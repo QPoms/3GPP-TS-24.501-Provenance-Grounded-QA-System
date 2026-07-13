@@ -41,7 +41,7 @@ def create_openai_client(settings: Settings):
     try:
         from openai import OpenAI
     except ImportError as error:  # pragma: no cover - environment-specific
-        raise RuntimeError("Install project dependencies before using the GPT agent") from error
+        raise RuntimeError("Install project dependencies before using the QA runtime") from error
     options = {"api_key": settings.openai_api_key}
     if settings.openai_base_url:
         options["base_url"] = settings.openai_base_url
